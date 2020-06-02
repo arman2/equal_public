@@ -1,0 +1,5 @@
+Name BusinessMetaModel
+Language LanguageBuilder
+Root .\Languages\BusinessMetamodel
+Model BusinessMetaModel.xml
+Assembly bin\BusinessMetaModel.dll

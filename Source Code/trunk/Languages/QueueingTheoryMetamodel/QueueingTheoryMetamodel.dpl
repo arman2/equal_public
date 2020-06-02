@@ -1,0 +1,4 @@
+Name QueueingTheoryMetamodel
+Assembly bin\QueueingTheoryMetamodel.dll
+DesignerFactory Designer.Factories.QueueingTheoryMetamodelModelFactory
+AnalystFactory Analyst.Factories.QueueingTheoryMetamodelModelFactory

@@ -1,0 +1,5 @@
+Name HuaweiTestingMetaModel
+Language LanguageBuilder
+Root .\Languages\HuaweiTestingMetaModel
+Model HuaweiTestingMetaModel.xml
+Assembly bin\HuaweiTestingMetaModel.dll

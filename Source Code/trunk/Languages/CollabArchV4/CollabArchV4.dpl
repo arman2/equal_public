@@ -1,0 +1,4 @@
+Name CollabArchV4
+Assembly bin\CollabArchV4.dll
+DesignerFactory Designer.Factories.CollabArchV4ModelFactory
+AnalystFactory Analyst.Factories.CollabArchV4ModelFactory

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDP_Simulation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DP_Simulation>
+    <Name>NewSimulation</Name>
+    <Position>0</Position>
+    <Status>Idle</Status>
+    <CreatedTime>2011-11-22T11:22:58.5528663-08:00</CreatedTime>
+    <LastRunTime>0001-01-01T00:00:00</LastRunTime>
+    <RunningTime />
+    <SimulationTime>0</SimulationTime>
+    <AverageRunningTime>0</AverageRunningTime>
+    <AverageSimulationTime>0</AverageSimulationTime>
+    <Progress>0</Progress>
+    <Runs />
+    <Watched />
+    <PropertyOverrides />
+    <StartInstances>
+      <DP_StartInstance>
+        <Type>0aea0cbd-c752-4a7c-a7a1-fbed219e2882</Type>
+        <Methods />
+        <Count>1</Count>
+        <Instances>
+          <DP_StartInstance>
+            <Type>1a46cb45-68c5-4a8d-8a88-7e471b8b77ef</Type>
+            <Methods>
+              <string>ChooseNextAction</string>
+            </Methods>
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>9267455d-6467-4113-adb3-e6660a494eba</Type>
+            <Methods>
+              <string>ChooseNextActionW</string>
+            </Methods>
+            <Count>10</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>13bf7f29-f7ae-470f-ba53-ffc6a40f63fd</Type>
+            <Methods />
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>624f63c6-c4b4-46c1-9de6-ff0b51c1d3e3</Type>
+            <Methods />
+            <Count>10</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>eacb6252-eda3-47d7-8e2e-88619a0d0699</Type>
+            <Methods />
+            <Count>10</Count>
+            <Instances />
+          </DP_StartInstance>
+        </Instances>
+      </DP_StartInstance>
+    </StartInstances>
+  </DP_Simulation>
+</ArrayOfDP_Simulation>

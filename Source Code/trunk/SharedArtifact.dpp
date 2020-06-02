@@ -1,0 +1,5 @@
+Name SharedArtifact
+Language CollaborationArchitecture
+Root .\Models\SharedArtifact
+Model SharedArtifact.xml
+Assembly bin\SharedArtifact.dll

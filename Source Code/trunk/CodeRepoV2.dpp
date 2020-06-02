@@ -1,0 +1,5 @@
+Name CodeRepoV2
+Language CollabArchV5
+Root .\Models\CodeRepoV2
+Model CodeRepoV2.xml
+Assembly bin\CodeRepoV2.dll

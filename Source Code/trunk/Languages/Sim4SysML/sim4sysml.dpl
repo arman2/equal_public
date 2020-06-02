@@ -1,0 +1,4 @@
+Name Sim4SysML
+Assembly bin\Sim4SysML.dll
+DesignerFactory Designer.Factories.Sim4SysMLModelFactory
+AnalystFactory Analyst.Factories.Sim4SysMLModelFactory

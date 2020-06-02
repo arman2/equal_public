@@ -1,0 +1,5 @@
+Name TaskAssignment
+Language CollaborationArchitecture2
+Root .\Models\TaskAssignment
+Model TaskAssignment.xml
+Assembly 

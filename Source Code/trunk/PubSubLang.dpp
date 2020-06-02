@@ -1,0 +1,5 @@
+Name PubSubLang
+Language LanguageBuilder
+Root .\Languages\PubSubLang
+Model PubSubLang.xml
+Assembly 

@@ -1,0 +1,4 @@
+Name Simple
+Assembly bin\Simple.dll
+DesignerFactory Designer.Factories.SimpleModelFactory
+AnalystFactory Analyst.Factories.SimpleModelFactory

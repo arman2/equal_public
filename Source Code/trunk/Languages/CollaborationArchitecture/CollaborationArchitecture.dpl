@@ -1,0 +1,4 @@
+Name CollaborationArchitecture
+Assembly bin\CollaborationArchitecture.dll
+DesignerFactory Designer.Factories.CollaborationArchitectureModelFactory
+AnalystFactory Analyst.Factories.CollaborationArchitectureModelFactory

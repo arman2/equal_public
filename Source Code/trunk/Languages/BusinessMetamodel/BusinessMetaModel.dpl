@@ -1,0 +1,4 @@
+Name BusinessModel
+Assembly bin\BusinessModel.dll
+DesignerFactory Designer.Factories.BusinessModelModelFactory
+AnalystFactory Analyst.Factories.BusinessModelModelFactory

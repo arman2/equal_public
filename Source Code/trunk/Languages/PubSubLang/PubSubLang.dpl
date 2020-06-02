@@ -1,0 +1,4 @@
+Name NewMetamodel
+Assembly bin\NewMetamodel.dll
+DesignerFactory Designer.Factories.NewMetamodelModelFactory
+AnalystFactory Analyst.Factories.NewMetamodelModelFactory

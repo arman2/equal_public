@@ -1,0 +1,5 @@
+Name VolunteerComputing
+Language LanguageBuilder
+Root .\Languages\Obamacare
+Model VolunteerComputing.xml
+Assembly bin\VolunteerComputing.dll

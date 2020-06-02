@@ -1,0 +1,5 @@
+Name CrowdResource
+Language CollabArchV5
+Root .\Models\CrowdResource
+Model CrowdResource.xml
+Assembly bin\CrowdResource.dll

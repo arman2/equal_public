@@ -1,0 +1,5 @@
+Name CodeRepoPolished
+Language CollabArchV3
+Root .\Models\CodeRepoPolished
+Model CodeRepoPolished.xml
+Assembly bin\CodeRepo.dll

@@ -1,0 +1,5 @@
+Name CodeRepo
+Language CollabArchV3
+Root .\Models\CodeRepo
+Model CodeRepo.xml
+Assembly bin\CodeRepo.dll

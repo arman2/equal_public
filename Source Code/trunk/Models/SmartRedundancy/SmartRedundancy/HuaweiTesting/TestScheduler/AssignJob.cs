@@ -1,0 +1,70 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading;
+using DomainPro.Core.Types;
+using DomainPro.Analyst;
+using DomainPro.Analyst.Interfaces;
+using DomainPro.Analyst.Types;
+using DomainPro.Analyst.Objects;
+using DomainPro.Analyst.Engine;
+using Analyst.Types;
+using Simulation;
+using Simulation.HuaweiTestingContext;
+
+namespace Simulation.HuaweiTestingContext.TestSchedulerContext
+{
+    using AssignJobContext;
+
+    public class AssignJob : DP_Method, DP_IMethod
+    {
+        public TestScheduler TestScheduler;
+
+        private AssignedJob AssignedJobInstance;
+
+        public AssignedJob AssignedJobData
+        {
+          get
+          {
+            return AssignedJobInstance;
+          }
+          set
+          {
+            AssignedJobInstance = value;
+          }
+        }
+
+        public UniformJob AssignedJob
+        {
+          get
+          {
+            return AssignedJobInstance.Value;
+          }
+          set
+          {
+            AssignedJobInstance.Value = value;
+          }
+        }
+
+        public override void Initialize()
+        {
+          base.Initialize();
+
+          AssignedJobInstance = (AssignedJob)Create("AssignedJob");
+
+        }
+
+        public override void Run()
+        {
+        }
+
+        public override double Duration
+        {
+          get
+          {
+return 0;
+          }
+        }
+
+    }
+}

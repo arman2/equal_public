@@ -1,0 +1,5 @@
+Name HealthCareMetaModel
+Language LanguageBuilder
+Root .\Models\HealthCareMetaModel
+Model HealthCareMetaModel.xml
+Assembly 

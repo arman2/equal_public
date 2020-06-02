@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDP_Simulation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DP_Simulation>
+    <Name>k = 3, r = 0.7</Name>
+    <Position>0</Position>
+    <Status>Idle</Status>
+    <CreatedTime>2011-11-15T09:08:32.283255-08:00</CreatedTime>
+    <LastRunTime>2011-12-14T20:55:46.1208583-08:00</LastRunTime>
+    <RunningTime />
+    <SimulationTime>300</SimulationTime>
+    <AverageRunningTime>10352018</AverageRunningTime>
+    <AverageSimulationTime>300</AverageSimulationTime>
+    <Progress>1000</Progress>
+    <Runs>
+      <DP_SimulationRun>
+        <StartTime>2011-11-15T09:09:09.6921207-08:00</StartTime>
+        <EndTime>2011-11-15T09:09:10.4877221-08:00</EndTime>
+        <SimTime>300</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-11-15T09:09:30.1281566-08:00</StartTime>
+        <EndTime>2011-11-15T09:09:31.3137587-08:00</EndTime>
+        <SimTime>300</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-11-17T14:59:11.729508-08:00</StartTime>
+        <EndTime>2011-11-17T14:59:13.1179105-08:00</EndTime>
+        <SimTime>300</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-14T19:43:47.5448497-08:00</StartTime>
+        <EndTime>2011-12-14T19:43:48.6524516-08:00</EndTime>
+        <SimTime>300</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-14T19:44:13.6172933-08:00</StartTime>
+        <EndTime>2011-12-14T19:44:14.3972946-08:00</EndTime>
+        <SimTime>300</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-14T20:06:23.1115451-08:00</StartTime>
+        <EndTime>2011-12-14T20:06:23.8407462-08:00</EndTime>
+        <SimTime>300</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-14T20:55:46.1208583-08:00</StartTime>
+        <EndTime>2011-12-14T20:55:47.3808601-08:00</EndTime>
+        <SimTime>300</SimTime>
+      </DP_SimulationRun>
+    </Runs>
+    <Watched>
+      <DP_WatchedType>
+        <TypeName>TraditionalRedundancySystem.SimpleJobServer.NumIncorrect</TypeName>
+      </DP_WatchedType>
+      <DP_WatchedType>
+        <TypeName>TraditionalRedundancySystem.SimpleJobServer.NumCorrect</TypeName>
+      </DP_WatchedType>
+      <DP_WatchedType>
+        <TypeName>TraditionalRedundancySystem.SimpleJobServer.PercentCorrect</TypeName>
+      </DP_WatchedType>
+    </Watched>
+    <PropertyOverrides />
+    <StartInstances>
+      <DP_StartInstance>
+        <Type>5081752d-6902-46b8-9e77-3e5182619ec1</Type>
+        <Methods />
+        <Count>1</Count>
+        <Instances>
+          <DP_StartInstance>
+            <Type>139c659e-5d62-4f7d-b2e0-52e2b38d6385</Type>
+            <Methods />
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>2f5684ff-4188-4930-ac0f-a6ae6ea3de45</Type>
+            <Methods />
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>0712a8aa-7c6a-412b-a118-758cfc6e8fe2</Type>
+            <Methods>
+              <string>SubdivideComp</string>
+            </Methods>
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>2d26cf0f-7f09-4510-8602-bc6a73c34472</Type>
+            <Methods />
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>3cf0312b-b27e-4e81-8dc5-172fc29436f1</Type>
+            <Methods />
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+        </Instances>
+      </DP_StartInstance>
+    </StartInstances>
+    <TerminationConditions>
+      <MaxSimTime>0</MaxSimTime>
+      <MaxRunTime>00:00:00</MaxRunTime>
+      <MaxCycles>0</MaxCycles>
+    </TerminationConditions>
+  </DP_Simulation>
+  <DP_Simulation>
+    <Name>k = 3, r = 0.7, c  =10000</Name>
+    <Position>1</Position>
+    <Status>Idle</Status>
+    <CreatedTime>2011-11-15T09:09:34.4493642-08:00</CreatedTime>
+    <LastRunTime>2011-12-15T12:24:07.351965-08:00</LastRunTime>
+    <RunningTime />
+    <SimulationTime>3000</SimulationTime>
+    <AverageRunningTime>474564825</AverageRunningTime>
+    <AverageSimulationTime>2755</AverageSimulationTime>
+    <Progress>1000</Progress>
+    <Runs>
+      <DP_SimulationRun>
+        <StartTime>2011-11-15T09:10:27.5518575-08:00</StartTime>
+        <EndTime>2011-11-15T09:10:28.2538587-08:00</EndTime>
+        <SimTime>300</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-11-15T09:10:43.6666858-08:00</StartTime>
+        <EndTime>2011-11-15T09:10:50.1094971-08:00</EndTime>
+        <SimTime>3000</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-11-15T09:11:39.1403832-08:00</StartTime>
+        <EndTime>2011-11-15T09:18:31.6051077-08:00</EndTime>
+        <SimTime>3000</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-14T19:45:14.1697928-08:00</StartTime>
+        <EndTime>2011-12-14T19:45:25.7762132-08:00</EndTime>
+        <SimTime>3000</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-14T19:45:44.314244-08:00</StartTime>
+        <EndTime>2011-12-14T19:45:55.2134611-08:00</EndTime>
+        <SimTime>3000</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-14T20:01:29.8610388-08:00</StartTime>
+        <EndTime>2011-12-14T20:01:40.7010572-08:00</EndTime>
+        <SimTime>3000</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-14T20:05:58.7483044-08:00</StartTime>
+        <EndTime>2011-12-14T20:06:10.205523-08:00</EndTime>
+        <SimTime>3000</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-14T20:06:30.0627564-08:00</StartTime>
+        <EndTime>2011-12-14T20:06:52.0675925-08:00</EndTime>
+        <SimTime>3000</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-14T20:07:01.6416082-08:00</StartTime>
+        <EndTime>2011-12-14T20:07:12.7940261-08:00</EndTime>
+        <SimTime>3000</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-14T20:13:53.5843157-08:00</StartTime>
+        <EndTime>2011-12-14T20:14:05.7743361-08:00</EndTime>
+        <SimTime>3000</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-15T12:24:07.351965-08:00</StartTime>
+        <EndTime>2011-12-15T12:24:19.6135865-08:00</EndTime>
+        <SimTime>3000</SimTime>
+      </DP_SimulationRun>
+    </Runs>
+    <Watched>
+      <DP_WatchedType>
+        <TypeName>TraditionalRedundancySystem.SimpleJobServer.NumCorrect</TypeName>
+      </DP_WatchedType>
+      <DP_WatchedType>
+        <TypeName>TraditionalRedundancySystem.SimpleJobServer.PercentCorrect</TypeName>
+      </DP_WatchedType>
+      <DP_WatchedType>
+        <TypeName>TraditionalRedundancySystem.SimpleJobServer.HandleResult</TypeName>
+      </DP_WatchedType>
+    </Watched>
+    <PropertyOverrides>
+      <DP_PropertyOverride>
+        <Type>TraditionalRedundancySystem.Problem</Type>
+        <Property>ComputationSize</Property>
+        <Value xsi:type="xsd:int">10000</Value>
+      </DP_PropertyOverride>
+    </PropertyOverrides>
+    <StartInstances>
+      <DP_StartInstance>
+        <Type>5081752d-6902-46b8-9e77-3e5182619ec1</Type>
+        <Methods />
+        <Count>1</Count>
+        <Instances>
+          <DP_StartInstance>
+            <Type>139c659e-5d62-4f7d-b2e0-52e2b38d6385</Type>
+            <Methods />
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>2f5684ff-4188-4930-ac0f-a6ae6ea3de45</Type>
+            <Methods />
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>0712a8aa-7c6a-412b-a118-758cfc6e8fe2</Type>
+            <Methods>
+              <string>SubdivideComp</string>
+            </Methods>
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>2d26cf0f-7f09-4510-8602-bc6a73c34472</Type>
+            <Methods />
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>3cf0312b-b27e-4e81-8dc5-172fc29436f1</Type>
+            <Methods />
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+        </Instances>
+      </DP_StartInstance>
+    </StartInstances>
+    <TerminationConditions>
+      <MaxSimTime>0</MaxSimTime>
+      <MaxRunTime>00:00:00</MaxRunTime>
+      <MaxCycles>0</MaxCycles>
+    </TerminationConditions>
+  </DP_Simulation>
+  <DP_Simulation>
+    <Name>k = 15, r = 0.6, c = 5000</Name>
+    <Position>2</Position>
+    <Status>Idle</Status>
+    <CreatedTime>2011-12-15T12:37:54.2938174-08:00</CreatedTime>
+    <LastRunTime>2011-12-15T12:51:17.7732287-08:00</LastRunTime>
+    <RunningTime />
+    <SimulationTime>7500</SimulationTime>
+    <AverageRunningTime>105066184</AverageRunningTime>
+    <AverageSimulationTime>3917</AverageSimulationTime>
+    <Progress>1000</Progress>
+    <Runs>
+      <DP_SimulationRun>
+        <StartTime>2011-12-15T12:39:23.7599746-08:00</StartTime>
+        <EndTime>2011-12-15T12:39:31.3415879-08:00</EndTime>
+        <SimTime>1</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-15T12:39:34.3679932-08:00</StartTime>
+        <EndTime>2011-12-15T12:39:41.8716064-08:00</EndTime>
+        <SimTime>3000</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-15T12:45:56.4750644-08:00</StartTime>
+        <EndTime>2011-12-15T12:46:03.9630775-08:00</EndTime>
+        <SimTime>3000</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-15T12:49:43.439863-08:00</StartTime>
+        <EndTime>2011-12-15T12:49:51.6298774-08:00</EndTime>
+        <SimTime>3500</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-15T12:50:23.3447331-08:00</StartTime>
+        <EndTime>2011-12-15T12:50:38.4143596-08:00</EndTime>
+        <SimTime>6500</SimTime>
+      </DP_SimulationRun>
+      <DP_SimulationRun>
+        <StartTime>2011-12-15T12:51:17.7732287-08:00</StartTime>
+        <EndTime>2011-12-15T12:51:34.9800589-08:00</EndTime>
+        <SimTime>7500</SimTime>
+      </DP_SimulationRun>
+    </Runs>
+    <Watched>
+      <DP_WatchedType>
+        <TypeName>TraditionalRedundancySystem.SimpleJobServer.PercentCorrect</TypeName>
+      </DP_WatchedType>
+    </Watched>
+    <PropertyOverrides>
+      <DP_PropertyOverride>
+        <Type>TraditionalRedundancySystem.Problem</Type>
+        <Property>ComputationSize</Property>
+        <Value xsi:type="xsd:int">5000</Value>
+      </DP_PropertyOverride>
+      <DP_PropertyOverride>
+        <Type>TraditionalRedundancySystem.Problem</Type>
+        <Property>RequiredConfidence</Property>
+        <Value xsi:type="xsd:int">15</Value>
+      </DP_PropertyOverride>
+      <DP_PropertyOverride>
+        <Type>TraditionalRedundancySystem.Volunteers</Type>
+        <Property>VolunteerReliability</Property>
+        <Value xsi:type="xsd:double">0.6</Value>
+      </DP_PropertyOverride>
+    </PropertyOverrides>
+    <StartInstances>
+      <DP_StartInstance>
+        <Type>5081752d-6902-46b8-9e77-3e5182619ec1</Type>
+        <Methods />
+        <Count>1</Count>
+        <Instances>
+          <DP_StartInstance>
+            <Type>139c659e-5d62-4f7d-b2e0-52e2b38d6385</Type>
+            <Methods />
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>2f5684ff-4188-4930-ac0f-a6ae6ea3de45</Type>
+            <Methods />
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>0712a8aa-7c6a-412b-a118-758cfc6e8fe2</Type>
+            <Methods>
+              <string>SubdivideComp</string>
+            </Methods>
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>2d26cf0f-7f09-4510-8602-bc6a73c34472</Type>
+            <Methods />
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+          <DP_StartInstance>
+            <Type>3cf0312b-b27e-4e81-8dc5-172fc29436f1</Type>
+            <Methods />
+            <Count>1</Count>
+            <Instances />
+          </DP_StartInstance>
+        </Instances>
+      </DP_StartInstance>
+    </StartInstances>
+    <TerminationConditions>
+      <MaxSimTime>0</MaxSimTime>
+      <MaxRunTime>00:00:00</MaxRunTime>
+      <MaxCycles>0</MaxCycles>
+    </TerminationConditions>
+  </DP_Simulation>
+</ArrayOfDP_Simulation>

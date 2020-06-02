@@ -1,0 +1,5 @@
+Name ArtifactLocalConflictResolving
+Language CollaborationArchitecture
+Root .\Models\ArtifactLocalConflictResolving
+Model ConflictAnalysis.xml
+Assembly bin\ArtifactLocalConflictResolving.dll

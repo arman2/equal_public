@@ -1,0 +1,5 @@
+Name TestQueueingModel
+Language HospitalMetamodel
+Root .\Models\TestQueueingModel
+Model TestQueueingModel.xml
+Assembly bin\TestQueueingModel.dll

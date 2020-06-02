@@ -1,0 +1,5 @@
+Name SFGHModel
+Language HospitalMetamodel
+Root .\Models\SFGHModel
+Model SFGHModel.xml
+Assembly 

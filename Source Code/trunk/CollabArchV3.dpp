@@ -1,0 +1,5 @@
+Name CollabArchV3
+Language LanguageBuilder
+Root .\Languages\CollabArchV3
+Model CollabArchV3.xml
+Assembly bin\CollabArchV3.dll

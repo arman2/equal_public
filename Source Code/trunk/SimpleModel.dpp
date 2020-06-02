@@ -1,0 +1,5 @@
+Name SimpleModel
+Language Simple
+Root .\Models\SimpleModel
+Model SimpleModel.xml
+Assembly bin\SimpleModel.dll

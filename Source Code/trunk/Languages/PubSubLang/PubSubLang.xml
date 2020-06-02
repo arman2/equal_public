@@ -1,0 +1,2519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DP_Metamodel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>NewMetamodel</Name>
+  <Id>5496d681-ad46-434f-89d1-5aed88987339</Id>
+  <Structure xsi:type="DP_MetamodelDiagram">
+    <Id>0abed051-1717-4840-ae8b-4e3d3d566571</Id>
+    <Types>
+      <anyType xsi:type="DP_MetaClass">
+        <Name>PubSubEnv</Name>
+        <Id>5b0cf5e0-daa3-4180-b87b-a869c3be952d</Id>
+        <Structure xsi:type="DP_MetaClassDiagram">
+          <Id>6c990cf7-0343-4d7d-af3b-bf0f175dd0e5</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>eb43fbea-db37-4069-9e6c-2a1c6c001158</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>100</Width>
+          <Height>30</Height>
+        </Size>
+        <Location>
+          <X>450</X>
+          <Y>298</Y>
+        </Location>
+        <DisplayName>PubSubEnv</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <ShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>60</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <BorderWidth>2</BorderWidth>
+          <FillColor>
+            <Argb>-1</Argb>
+          </FillColor>
+          <GradientFill>true</GradientFill>
+          <GradientFillColor>
+            <Argb>-2894893</Argb>
+          </GradientFillColor>
+          <CornerRounding>10</CornerRounding>
+          <Alignment>TopCenter</Alignment>
+        </ShapeProperties>
+        <InstanceNameTextFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Regular</Style>
+        </InstanceNameTextFont>
+        <InstanceShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>100</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <GradientFillColor>
+            <Argb>0</Argb>
+          </GradientFillColor>
+        </InstanceShapeProperties>
+        <InstanceLineProperties>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <Role1>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </InstanceLineProperties>
+      </anyType>
+      <anyType xsi:type="DP_MetaClass">
+        <Name>Publisher</Name>
+        <Id>1f3d5c98-1357-474f-92aa-4d667c9c5209</Id>
+        <Structure xsi:type="DP_MetaClassDiagram">
+          <Id>59ac7d96-f130-4c20-aa98-737601a06d7c</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>1ee15bf4-9c67-411b-bb8c-fcd27270c584</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>100</Width>
+          <Height>60</Height>
+        </Size>
+        <Location>
+          <X>58</X>
+          <Y>267</Y>
+        </Location>
+        <DisplayName>Publisher</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <ShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>60</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <BorderWidth>2</BorderWidth>
+          <FillColor>
+            <Argb>-1</Argb>
+          </FillColor>
+          <GradientFill>true</GradientFill>
+          <GradientFillColor>
+            <Argb>-2894893</Argb>
+          </GradientFillColor>
+          <CornerRounding>10</CornerRounding>
+          <Alignment>TopCenter</Alignment>
+        </ShapeProperties>
+        <InstanceNameTextFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Regular</Style>
+        </InstanceNameTextFont>
+        <InstanceShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>100</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <GradientFillColor>
+            <Argb>0</Argb>
+          </GradientFillColor>
+        </InstanceShapeProperties>
+        <InstanceLineProperties>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <Role1>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </InstanceLineProperties>
+      </anyType>
+      <anyType xsi:type="DP_MetaClass">
+        <Name>Subscriber</Name>
+        <Id>9adfedd6-bfa6-4bc3-bf54-f37bce9a5c3e</Id>
+        <Structure xsi:type="DP_MetaClassDiagram">
+          <Id>df89a458-a164-49ca-a4cc-980c64f84343</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>49fb8397-fb79-4f93-82a1-1651972043b7</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>100</Width>
+          <Height>60</Height>
+        </Size>
+        <Location>
+          <X>259</X>
+          <Y>302</Y>
+        </Location>
+        <DisplayName>Subscriber</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <ShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>60</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <BorderWidth>2</BorderWidth>
+          <FillColor>
+            <Argb>-1</Argb>
+          </FillColor>
+          <GradientFill>true</GradientFill>
+          <GradientFillColor>
+            <Argb>-2894893</Argb>
+          </GradientFillColor>
+          <CornerRounding>10</CornerRounding>
+          <Alignment>TopCenter</Alignment>
+        </ShapeProperties>
+        <InstanceNameTextFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Regular</Style>
+        </InstanceNameTextFont>
+        <InstanceShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>100</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <GradientFillColor>
+            <Argb>0</Argb>
+          </GradientFillColor>
+        </InstanceShapeProperties>
+        <InstanceLineProperties>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <Role1>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </InstanceLineProperties>
+      </anyType>
+      <anyType xsi:type="DP_MetaClass">
+        <Name>Peer</Name>
+        <Id>63659343-f04e-4d7f-a06a-3624348bbe49</Id>
+        <Structure xsi:type="DP_MetaClassDiagram">
+          <Id>25e96fc6-f531-4598-921f-83076d3c7637</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>fddea0d8-9db8-44ef-9b83-c3f7b2df27b6</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>100</Width>
+          <Height>60</Height>
+        </Size>
+        <Location>
+          <X>196</X>
+          <Y>425</Y>
+        </Location>
+        <DisplayName>Peer</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <ShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>60</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <BorderWidth>2</BorderWidth>
+          <FillColor>
+            <Argb>-1</Argb>
+          </FillColor>
+          <GradientFill>true</GradientFill>
+          <GradientFillColor>
+            <Argb>-2894893</Argb>
+          </GradientFillColor>
+          <CornerRounding>10</CornerRounding>
+          <Alignment>TopCenter</Alignment>
+        </ShapeProperties>
+        <InstanceNameTextFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Regular</Style>
+        </InstanceNameTextFont>
+        <InstanceShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>100</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <GradientFillColor>
+            <Argb>0</Argb>
+          </GradientFillColor>
+        </InstanceShapeProperties>
+        <InstanceLineProperties>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <Role1>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </InstanceLineProperties>
+      </anyType>
+      <anyType xsi:type="DP_MetaClass">
+        <Name>Action</Name>
+        <Id>a4fec50a-1dc0-485c-bd1d-89182f9049c2</Id>
+        <Structure xsi:type="DP_MetaClassDiagram">
+          <Id>e28fab77-1a7e-40c8-9c70-7fcc936181b8</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>3461c8c6-ad12-417b-8389-429a8ed3854f</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>100</Width>
+          <Height>60</Height>
+        </Size>
+        <Location>
+          <X>228</X>
+          <Y>16</Y>
+        </Location>
+        <DisplayName>Action</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <ShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>60</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <BorderWidth>2</BorderWidth>
+          <FillColor>
+            <Argb>-1</Argb>
+          </FillColor>
+          <GradientFill>true</GradientFill>
+          <GradientFillColor>
+            <Argb>-2894893</Argb>
+          </GradientFillColor>
+          <CornerRounding>10</CornerRounding>
+          <Alignment>TopCenter</Alignment>
+        </ShapeProperties>
+        <InstanceNameTextFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Regular</Style>
+        </InstanceNameTextFont>
+        <InstanceShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>100</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <GradientFillColor>
+            <Argb>0</Argb>
+          </GradientFillColor>
+        </InstanceShapeProperties>
+        <InstanceLineProperties>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <Role1>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </InstanceLineProperties>
+        <InstanceSimulationType>Method</InstanceSimulationType>
+      </anyType>
+      <anyType xsi:type="DP_MetaClass">
+        <Name>Subscribe</Name>
+        <Id>c27cbfa7-df2c-41bb-9d6e-da78c4dd457a</Id>
+        <Structure xsi:type="DP_MetaClassDiagram">
+          <Id>84e27b5c-e025-4f6b-8bc6-dbcf5db2cced</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>ccb86b40-566f-4fb6-a6cd-72ed7893314e</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>100</Width>
+          <Height>41</Height>
+        </Size>
+        <Location>
+          <X>190</X>
+          <Y>189</Y>
+        </Location>
+        <DisplayName>Subscribe</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <ShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>60</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <BorderWidth>2</BorderWidth>
+          <FillColor>
+            <Argb>-1</Argb>
+          </FillColor>
+          <GradientFill>true</GradientFill>
+          <GradientFillColor>
+            <Argb>-2894893</Argb>
+          </GradientFillColor>
+          <CornerRounding>10</CornerRounding>
+          <Alignment>TopCenter</Alignment>
+        </ShapeProperties>
+        <InstanceNameTextFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Regular</Style>
+        </InstanceNameTextFont>
+        <InstanceShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>100</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <GradientFillColor>
+            <Argb>0</Argb>
+          </GradientFillColor>
+        </InstanceShapeProperties>
+        <InstanceLineProperties>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <Role1>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </InstanceLineProperties>
+      </anyType>
+      <anyType xsi:type="DP_MetaClass">
+        <Name>Publish</Name>
+        <Id>ef712ad9-817c-4ede-93ec-c7b2f1558c77</Id>
+        <Structure xsi:type="DP_MetaClassDiagram">
+          <Id>dc4f27bd-1461-4759-a930-349797c8372e</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>cd4dcd74-8e8e-48f9-92e0-7c60b72cfab6</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>100</Width>
+          <Height>37</Height>
+        </Size>
+        <Location>
+          <X>73</X>
+          <Y>140</Y>
+        </Location>
+        <DisplayName>Publish</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <ShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>60</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <BorderWidth>2</BorderWidth>
+          <FillColor>
+            <Argb>-1</Argb>
+          </FillColor>
+          <GradientFill>true</GradientFill>
+          <GradientFillColor>
+            <Argb>-2894893</Argb>
+          </GradientFillColor>
+          <CornerRounding>10</CornerRounding>
+          <Alignment>TopCenter</Alignment>
+        </ShapeProperties>
+        <InstanceNameTextFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Regular</Style>
+        </InstanceNameTextFont>
+        <InstanceShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>100</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <GradientFillColor>
+            <Argb>0</Argb>
+          </GradientFillColor>
+        </InstanceShapeProperties>
+        <InstanceLineProperties>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <Role1>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </InstanceLineProperties>
+      </anyType>
+      <anyType xsi:type="DP_MetaInheritance">
+        <Name>NewInheritance</Name>
+        <Id>9fa63136-244e-4f56-a6d1-2bb7b44cd6b0</Id>
+        <Structure xsi:type="DP_MetaInheritanceDiagram">
+          <Id>aeba84a4-fba4-4b1e-86e2-e67215e95b74</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>3c044199-fc8d-4ed4-9a45-95227a7c87f0</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>60</Width>
+          <Height>133</Height>
+        </Size>
+        <Location>
+          <X>240</X>
+          <Y>76</Y>
+        </Location>
+        <DisplayName>NewInheritance</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\emptytriangle.gif</Icon>
+            <Offset>
+              <X>72</X>
+              <Y>60</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>50</X>
+              <Y>20</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>a4fec50a-1dc0-485c-bd1d-89182f9049c2</Role1Id>
+        <Role2Id>c27cbfa7-df2c-41bb-9d6e-da78c4dd457a</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaInheritance">
+        <Name>NewInheritance1</Name>
+        <Id>1499e5cf-7257-489e-a7bf-1f2b483a739d</Id>
+        <Structure xsi:type="DP_MetaInheritanceDiagram">
+          <Id>c7c71e52-6409-447f-bd7c-af375cffd6c0</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>d1cd28b1-4963-40c0-a6aa-9de1155f2a64</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>114</Width>
+          <Height>84</Height>
+        </Size>
+        <Location>
+          <X>114</X>
+          <Y>56</Y>
+        </Location>
+        <DisplayName>NewInheritance1</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\emptytriangle.gif</Icon>
+            <Offset>
+              <X>0</X>
+              <Y>40</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>41</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>a4fec50a-1dc0-485c-bd1d-89182f9049c2</Role1Id>
+        <Role2Id>ef712ad9-817c-4ede-93ec-c7b2f1558c77</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaClass">
+        <Name>Group</Name>
+        <Id>af5e16b7-059a-4e78-9c51-3905a18da48b</Id>
+        <Structure xsi:type="DP_MetaClassDiagram">
+          <Id>231bcff2-eae5-4a55-89fd-862f0ef66d0b</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>b515c0bb-41d5-47f9-b803-22db82de9d31</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>100</Width>
+          <Height>50</Height>
+        </Size>
+        <Location>
+          <X>470</X>
+          <Y>161</Y>
+        </Location>
+        <DisplayName>Group</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <ShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>60</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <BorderWidth>2</BorderWidth>
+          <FillColor>
+            <Argb>-1</Argb>
+          </FillColor>
+          <GradientFill>true</GradientFill>
+          <GradientFillColor>
+            <Argb>-2894893</Argb>
+          </GradientFillColor>
+          <CornerRounding>10</CornerRounding>
+          <Alignment>TopCenter</Alignment>
+        </ShapeProperties>
+        <InstanceNameTextFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Regular</Style>
+        </InstanceNameTextFont>
+        <InstanceShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>100</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <GradientFillColor>
+            <Argb>0</Argb>
+          </GradientFillColor>
+        </InstanceShapeProperties>
+        <InstanceLineProperties>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <Role1>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </InstanceLineProperties>
+      </anyType>
+      <anyType xsi:type="DP_MetaClass">
+        <Name>Receive</Name>
+        <Id>38f8ff23-198a-4a20-b094-e3cee5359ffb</Id>
+        <Structure xsi:type="DP_MetaClassDiagram">
+          <Id>3301fd89-f528-4cad-80f7-716440c37f23</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>df797773-78c6-4b3a-ae4b-d5b54aa9c464</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>100</Width>
+          <Height>41</Height>
+        </Size>
+        <Location>
+          <X>316</X>
+          <Y>138</Y>
+        </Location>
+        <DisplayName>Receive</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <ShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>60</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <BorderWidth>2</BorderWidth>
+          <FillColor>
+            <Argb>-1</Argb>
+          </FillColor>
+          <GradientFill>true</GradientFill>
+          <GradientFillColor>
+            <Argb>-2894893</Argb>
+          </GradientFillColor>
+          <CornerRounding>10</CornerRounding>
+          <Alignment>TopCenter</Alignment>
+        </ShapeProperties>
+        <InstanceNameTextFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Regular</Style>
+        </InstanceNameTextFont>
+        <InstanceShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>100</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <GradientFillColor>
+            <Argb>0</Argb>
+          </GradientFillColor>
+        </InstanceShapeProperties>
+        <InstanceLineProperties>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <Role1>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </InstanceLineProperties>
+      </anyType>
+      <anyType xsi:type="DP_MetaClass">
+        <Name>Forward</Name>
+        <Id>cb950895-f671-457c-8fbb-e6e355e2c20a</Id>
+        <Structure xsi:type="DP_MetaClassDiagram">
+          <Id>a054e20d-d93f-4a40-83d9-1115a40131f2</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>f48c50ea-e808-4d2e-88fe-c0b0b2326ef3</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>100</Width>
+          <Height>42</Height>
+        </Size>
+        <Location>
+          <X>432</X>
+          <Y>66</Y>
+        </Location>
+        <DisplayName>Forward</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <ShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>60</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <BorderWidth>2</BorderWidth>
+          <FillColor>
+            <Argb>-1</Argb>
+          </FillColor>
+          <GradientFill>true</GradientFill>
+          <GradientFillColor>
+            <Argb>-2894893</Argb>
+          </GradientFillColor>
+          <CornerRounding>10</CornerRounding>
+          <Alignment>TopCenter</Alignment>
+        </ShapeProperties>
+        <InstanceNameTextFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Regular</Style>
+        </InstanceNameTextFont>
+        <InstanceShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>100</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <GradientFillColor>
+            <Argb>0</Argb>
+          </GradientFillColor>
+        </InstanceShapeProperties>
+        <InstanceLineProperties>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <Role1>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </InstanceLineProperties>
+      </anyType>
+      <anyType xsi:type="DP_MetaInheritance">
+        <Name>NewInheritance2</Name>
+        <Id>0c8e2ef8-6aca-47bb-a2a0-7ae3ee8b1e39</Id>
+        <Structure xsi:type="DP_MetaInheritanceDiagram">
+          <Id>77ddcc9f-8244-4e28-b0b7-3bbfdcfeb09e</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>27384ee0-2964-4f91-a05c-e23610b62566</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>48</Width>
+          <Height>78</Height>
+        </Size>
+        <Location>
+          <X>302</X>
+          <Y>60</Y>
+        </Location>
+        <DisplayName>NewInheritance2</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\emptytriangle.gif</Icon>
+            <Offset>
+              <X>74</X>
+              <Y>44</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>34</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>a4fec50a-1dc0-485c-bd1d-89182f9049c2</Role1Id>
+        <Role2Id>38f8ff23-198a-4a20-b094-e3cee5359ffb</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaInheritance">
+        <Name>NewInheritance3</Name>
+        <Id>dda4a325-14bd-4df0-9cb9-359a6ca20cc5</Id>
+        <Structure xsi:type="DP_MetaInheritanceDiagram">
+          <Id>341e64ca-324c-49aa-a43a-0f32cbbbc551</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>f237821a-712f-4248-8ad3-286b2fe6fd77</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>104</Width>
+          <Height>29</Height>
+        </Size>
+        <Location>
+          <X>328</X>
+          <Y>37</Y>
+        </Location>
+        <DisplayName>NewInheritance3</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\emptytriangle.gif</Icon>
+            <Offset>
+              <X>100</X>
+              <Y>21</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>a4fec50a-1dc0-485c-bd1d-89182f9049c2</Role1Id>
+        <Role2Id>cb950895-f671-457c-8fbb-e6e355e2c20a</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaContainment">
+        <Name>NewContainment8</Name>
+        <Id>30a9235c-dd5f-4b9f-84c1-1fe4910f6b26</Id>
+        <Structure xsi:type="DP_MetaContainmentDiagram">
+          <Id>bac85bc9-3cd5-4e6e-9393-1a8ce6074c10</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>b5c16aad-d351-4cf1-be5c-43c52efc00a2</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>28</Width>
+          <Height>87</Height>
+        </Size>
+        <Location>
+          <X>516</X>
+          <Y>211</Y>
+        </Location>
+        <DisplayName>NewContainment8</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>74</X>
+              <Y>50</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\diamond.gif</Icon>
+            <Offset>
+              <X>66</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>af5e16b7-059a-4e78-9c51-3905a18da48b</Role1Id>
+        <Role2Id>5b0cf5e0-daa3-4180-b87b-a869c3be952d</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaContainment">
+        <Name>NewContainment</Name>
+        <Id>cf3eac36-27b4-4e93-ac7f-1fc2241f961c</Id>
+        <Structure xsi:type="DP_MetaContainmentDiagram">
+          <Id>f0e0635a-bfc2-48df-8155-68fb415e84a9</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>3b44fe82-0f5b-4831-a6f1-80f11342c226</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>106</Width>
+          <Height>33</Height>
+        </Size>
+        <Location>
+          <X>359</X>
+          <Y>298</Y>
+        </Location>
+        <DisplayName>NewContainment</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>100</X>
+              <Y>29</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\diamond.gif</Icon>
+            <Offset>
+              <X>15</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>9adfedd6-bfa6-4bc3-bf54-f37bce9a5c3e</Role1Id>
+        <Role2Id>5b0cf5e0-daa3-4180-b87b-a869c3be952d</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaContainment">
+        <Name>NewContainment1</Name>
+        <Id>e6c3a179-c514-4aee-b4f0-524c7063bac8</Id>
+        <Structure xsi:type="DP_MetaContainmentDiagram">
+          <Id>6877b4c1-a249-4be0-9e7c-d6d97498454f</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>4344f98f-4adb-4835-bdd5-0624c3d201fa</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>27</Width>
+          <Height>109</Height>
+        </Size>
+        <Location>
+          <X>96</X>
+          <Y>158</Y>
+        </Location>
+        <DisplayName>NewContainment1</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>50</X>
+              <Y>18</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\diamond.gif</Icon>
+            <Offset>
+              <X>38</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>ef712ad9-817c-4ede-93ec-c7b2f1558c77</Role1Id>
+        <Role2Id>1f3d5c98-1357-474f-92aa-4d667c9c5209</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaContainment">
+        <Name>NewContainment2</Name>
+        <Id>5b607af8-43dd-4d6b-9057-7b11f56b9a6e</Id>
+        <Structure xsi:type="DP_MetaContainmentDiagram">
+          <Id>38ef906d-a35a-4312-bd67-b84c3f87909a</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>c5c8d1a9-d81c-4d3b-85c1-27027221e1e4</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>22</Width>
+          <Height>72</Height>
+        </Size>
+        <Location>
+          <X>268</X>
+          <Y>230</Y>
+        </Location>
+        <DisplayName>NewContainment2</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>78</X>
+              <Y>41</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\diamond.gif</Icon>
+            <Offset>
+              <X>31</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>c27cbfa7-df2c-41bb-9d6e-da78c4dd457a</Role1Id>
+        <Role2Id>9adfedd6-bfa6-4bc3-bf54-f37bce9a5c3e</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaContainment">
+        <Name>NewContainment3</Name>
+        <Id>199cc699-0223-4f84-bb6e-ced6556c50cc</Id>
+        <Structure xsi:type="DP_MetaContainmentDiagram">
+          <Id>c5e299f8-1d1d-4406-9e11-f4b109fb4144</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>c106459b-4b71-420e-9aaf-0b45e3dde051</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>95</Width>
+          <Height>98</Height>
+        </Size>
+        <Location>
+          <X>117</X>
+          <Y>327</Y>
+        </Location>
+        <DisplayName>NewContainment3</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>59</X>
+              <Y>60</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\diamond.gif</Icon>
+            <Offset>
+              <X>16</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>1f3d5c98-1357-474f-92aa-4d667c9c5209</Role1Id>
+        <Role2Id>63659343-f04e-4d7f-a06a-3624348bbe49</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaContainment">
+        <Name>NewContainment4</Name>
+        <Id>87695c49-41c1-4518-8a6d-c7e4917ec33a</Id>
+        <Structure xsi:type="DP_MetaContainmentDiagram">
+          <Id>e07c5363-9ca5-445f-8fad-867bb57ae2cb</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>f263535f-d656-418a-a2d9-bc70bd9f20c1</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>38</Width>
+          <Height>63</Height>
+        </Size>
+        <Location>
+          <X>261</X>
+          <Y>362</Y>
+        </Location>
+        <DisplayName>NewContainment4</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>40</X>
+              <Y>60</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\diamond.gif</Icon>
+            <Offset>
+              <X>65</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>9adfedd6-bfa6-4bc3-bf54-f37bce9a5c3e</Role1Id>
+        <Role2Id>63659343-f04e-4d7f-a06a-3624348bbe49</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaContainment">
+        <Name>NewContainment5</Name>
+        <Id>b6308354-e45f-4c48-8820-66a0a6be100b</Id>
+        <Structure xsi:type="DP_MetaContainmentDiagram">
+          <Id>d5f7796f-0a1a-40ee-8f1b-bd5700aff52b</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>6c610b7a-7645-4331-8e4b-1205a012678a</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>292</Width>
+          <Height>31</Height>
+        </Size>
+        <Location>
+          <X>158</X>
+          <Y>267</Y>
+        </Location>
+        <DisplayName>NewContainment5</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>100</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\diamond.gif</Icon>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>1f3d5c98-1357-474f-92aa-4d667c9c5209</Role1Id>
+        <Role2Id>5b0cf5e0-daa3-4180-b87b-a869c3be952d</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaContainment">
+        <Name>NewContainment6</Name>
+        <Id>1ca031a0-b00a-4ccb-ad9d-71b0974a6d00</Id>
+        <Structure xsi:type="DP_MetaContainmentDiagram">
+          <Id>f3aee68b-350f-4aaf-b361-9100730b99a6</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>7c1c268a-9ea4-4dc6-8f6f-8983324b889c</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>1</Width>
+          <Height>53</Height>
+        </Size>
+        <Location>
+          <X>499</X>
+          <Y>108</Y>
+        </Location>
+        <DisplayName>NewContainment6</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>68</X>
+              <Y>42</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\diamond.gif</Icon>
+            <Offset>
+              <X>29</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>cb950895-f671-457c-8fbb-e6e355e2c20a</Role1Id>
+        <Role2Id>af5e16b7-059a-4e78-9c51-3905a18da48b</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaContainment">
+        <Name>NewContainment7</Name>
+        <Id>2f3c7283-1990-4ac5-b7bf-52597ccd43f5</Id>
+        <Structure xsi:type="DP_MetaContainmentDiagram">
+          <Id>3b973849-7aff-4b2f-b6d2-7c672d9020f5</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>c6f3bc9e-9a99-471b-ab42-bef3dd4723cb</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>54</Width>
+          <Height>33</Height>
+        </Size>
+        <Location>
+          <X>416</X>
+          <Y>154</Y>
+        </Location>
+        <DisplayName>NewContainment7</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>100</X>
+              <Y>16</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\diamond.gif</Icon>
+            <Offset>
+              <X>0</X>
+              <Y>26</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>38f8ff23-198a-4a20-b094-e3cee5359ffb</Role1Id>
+        <Role2Id>af5e16b7-059a-4e78-9c51-3905a18da48b</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaClass">
+        <Name>PubStream</Name>
+        <Id>0b0dfdf7-d96f-4aa0-854f-3fb8ca3358cc</Id>
+        <Structure xsi:type="DP_MetaClassDiagram">
+          <Id>f619cc9e-31bb-4891-9548-6f2a95d57a52</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>b3f95547-b57c-49c8-bdb2-97a96d0c288f</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>100</Width>
+          <Height>46</Height>
+        </Size>
+        <Location>
+          <X>26</X>
+          <Y>34</Y>
+        </Location>
+        <DisplayName>PubStream</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <ShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>60</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <BorderWidth>2</BorderWidth>
+          <FillColor>
+            <Argb>-1</Argb>
+          </FillColor>
+          <GradientFill>true</GradientFill>
+          <GradientFillColor>
+            <Argb>-2894893</Argb>
+          </GradientFillColor>
+          <CornerRounding>10</CornerRounding>
+          <Alignment>TopCenter</Alignment>
+        </ShapeProperties>
+        <InstancePresentationType>Line</InstancePresentationType>
+        <InstanceNameTextFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Regular</Style>
+        </InstanceNameTextFont>
+        <InstanceShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>100</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <GradientFillColor>
+            <Argb>0</Argb>
+          </GradientFillColor>
+        </InstanceShapeProperties>
+        <InstanceLineProperties>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <Role1>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </InstanceLineProperties>
+        <InstanceSimulationType>Flow</InstanceSimulationType>
+      </anyType>
+      <anyType xsi:type="DP_MetaClass">
+        <Name>SubStream</Name>
+        <Id>a0981248-54fd-4bd2-b001-aa4cd7029379</Id>
+        <Structure xsi:type="DP_MetaClassDiagram">
+          <Id>95a8b9da-67fc-484c-b54f-b63e202afd22</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>e3e8c389-971b-4a18-88a8-77b297e0d859</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>100</Width>
+          <Height>60</Height>
+        </Size>
+        <Location>
+          <X>643</X>
+          <Y>206</Y>
+        </Location>
+        <DisplayName>SubStream</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <ShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>60</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <BorderWidth>2</BorderWidth>
+          <FillColor>
+            <Argb>-1</Argb>
+          </FillColor>
+          <GradientFill>true</GradientFill>
+          <GradientFillColor>
+            <Argb>-2894893</Argb>
+          </GradientFillColor>
+          <CornerRounding>10</CornerRounding>
+          <Alignment>TopCenter</Alignment>
+        </ShapeProperties>
+        <InstancePresentationType>Line</InstancePresentationType>
+        <InstanceNameTextFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Regular</Style>
+        </InstanceNameTextFont>
+        <InstanceShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>100</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <GradientFillColor>
+            <Argb>0</Argb>
+          </GradientFillColor>
+        </InstanceShapeProperties>
+        <InstanceLineProperties>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <Role1>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </InstanceLineProperties>
+        <InstanceSimulationType>Flow</InstanceSimulationType>
+      </anyType>
+      <anyType xsi:type="DP_MetaReference">
+        <Name>NewReference</Name>
+        <Id>817211b6-f536-4718-a04b-11e5642fefce</Id>
+        <Structure xsi:type="DP_MetaReferenceDiagram">
+          <Id>10d9e09f-6584-4d12-a929-044d144fc6c7</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>d3b42d40-ac83-42a9-b98e-0f7394495305</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>133</Width>
+          <Height>119</Height>
+        </Size>
+        <Location>
+          <X>532</X>
+          <Y>87</Y>
+        </Location>
+        <DisplayName>NewReference</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <DisplayedName>source</DisplayedName>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>100</X>
+              <Y>21</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <DisplayedName>target</DisplayedName>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\arrow.gif</Icon>
+            <Offset>
+              <X>22</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>cb950895-f671-457c-8fbb-e6e355e2c20a</Role1Id>
+        <Role2Id>a0981248-54fd-4bd2-b001-aa4cd7029379</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaReference">
+        <Name>NewReference1</Name>
+        <Id>7bcf0c43-87db-4211-88a9-b7dafde6c9c5</Id>
+        <Structure xsi:type="DP_MetaReferenceDiagram">
+          <Id>259d3490-64e5-46eb-863c-d3703e8248b0</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>b7b5779d-84b9-4ab9-84c6-cde1129d051b</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>353</Width>
+          <Height>16</Height>
+        </Size>
+        <Location>
+          <X>290</X>
+          <Y>230</Y>
+        </Location>
+        <DisplayName>NewReference1</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <DisplayedName>source</DisplayedName>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>100</X>
+              <Y>41</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <DisplayedName>target</DisplayedName>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\arrow.gif</Icon>
+            <Offset>
+              <X>0</X>
+              <Y>40</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>c27cbfa7-df2c-41bb-9d6e-da78c4dd457a</Role1Id>
+        <Role2Id>a0981248-54fd-4bd2-b001-aa4cd7029379</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaReference">
+        <Name>NewReference2</Name>
+        <Id>80ac79fc-94bc-4ce0-a3ad-e225a9e4f9a0</Id>
+        <Structure xsi:type="DP_MetaReferenceDiagram">
+          <Id>d58db394-7875-4f9a-8808-ec5329c35957</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>91b8d9bc-0300-4710-8a2a-d0023508bf72</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>4</Width>
+          <Height>60</Height>
+        </Size>
+        <Location>
+          <X>69</X>
+          <Y>80</Y>
+        </Location>
+        <DisplayName>NewReference2</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <DisplayedName>source</DisplayedName>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <DisplayedName>target</DisplayedName>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\arrow.gif</Icon>
+            <Offset>
+              <X>43</X>
+              <Y>46</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>ef712ad9-817c-4ede-93ec-c7b2f1558c77</Role1Id>
+        <Role2Id>0b0dfdf7-d96f-4aa0-854f-3fb8ca3358cc</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaReference">
+        <Name>NewReference3</Name>
+        <Id>998907cb-b4d2-4e8c-b210-4c833eacc5ee</Id>
+        <Structure xsi:type="DP_MetaReferenceDiagram">
+          <Id>da6f1c86-9417-4a37-83f1-54d382d7d07f</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>2f2df57e-828d-4394-a810-9a2988a65232</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>190</Width>
+          <Height>58</Height>
+        </Size>
+        <Location>
+          <X>126</X>
+          <Y>80</Y>
+        </Location>
+        <DisplayName>NewReference3</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <DisplayedName>source</DisplayedName>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <DisplayedName>target</DisplayedName>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\arrow.gif</Icon>
+            <Offset>
+              <X>100</X>
+              <Y>46</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>38f8ff23-198a-4a20-b094-e3cee5359ffb</Role1Id>
+        <Role2Id>0b0dfdf7-d96f-4aa0-854f-3fb8ca3358cc</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaClass">
+        <Name>Event</Name>
+        <Id>41e102e1-e9e3-4d6f-82ac-eaab20f70d1d</Id>
+        <Structure xsi:type="DP_MetaClassDiagram">
+          <Id>e0a36d58-51da-430b-9fbb-893e37bd1839</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>8d4747ea-bae8-423e-993d-97639fc1d259</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>100</Width>
+          <Height>60</Height>
+        </Size>
+        <Location>
+          <X>655</X>
+          <Y>45</Y>
+        </Location>
+        <DisplayName>Event</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <ShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>60</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <BorderWidth>2</BorderWidth>
+          <FillColor>
+            <Argb>-1</Argb>
+          </FillColor>
+          <GradientFill>true</GradientFill>
+          <GradientFillColor>
+            <Argb>-2894893</Argb>
+          </GradientFillColor>
+          <CornerRounding>10</CornerRounding>
+          <Alignment>TopCenter</Alignment>
+        </ShapeProperties>
+        <InstanceNameTextFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Regular</Style>
+        </InstanceNameTextFont>
+        <InstanceShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>100</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <GradientFillColor>
+            <Argb>0</Argb>
+          </GradientFillColor>
+        </InstanceShapeProperties>
+        <InstanceLineProperties>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>0</Argb>
+          </FillColor>
+          <Role1>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>9</Size>
+              <Style>Regular</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </InstanceLineProperties>
+        <InstanceSimulationType>Data</InstanceSimulationType>
+      </anyType>
+      <anyType xsi:type="DP_MetaContainment">
+        <Name>NewContainment9</Name>
+        <Id>516eae48-c5cc-4ac4-867c-5a5a26403c2d</Id>
+        <Structure xsi:type="DP_MetaContainmentDiagram">
+          <Id>72087a0a-e6d6-47f4-92d1-daac517c9c16</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>4393f124-8db5-4821-9ecc-8bff94d60fa5</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>20</Width>
+          <Height>101</Height>
+        </Size>
+        <Location>
+          <X>690</X>
+          <Y>105</Y>
+        </Location>
+        <DisplayName>NewContainment9</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>55</X>
+              <Y>60</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\diamond.gif</Icon>
+            <Offset>
+              <X>47</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>41e102e1-e9e3-4d6f-82ac-eaab20f70d1d</Role1Id>
+        <Role2Id>a0981248-54fd-4bd2-b001-aa4cd7029379</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaContainment">
+        <Name>NewContainment10</Name>
+        <Id>2481ac98-c277-401a-991c-b24e05814474</Id>
+        <Structure xsi:type="DP_MetaContainmentDiagram">
+          <Id>dcb7d6b4-a817-41af-9998-c4e9fbfdfe95</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>788505b1-72a7-4e2d-904e-843e2deb4b09</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>529</Width>
+          <Height>15</Height>
+        </Size>
+        <Location>
+          <X>126</X>
+          <Y>51</Y>
+        </Location>
+        <DisplayName>NewContainment10</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>21</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\diamond.gif</Icon>
+            <Offset>
+              <X>100</X>
+              <Y>17</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>41e102e1-e9e3-4d6f-82ac-eaab20f70d1d</Role1Id>
+        <Role2Id>0b0dfdf7-d96f-4aa0-854f-3fb8ca3358cc</Role2Id>
+      </anyType>
+      <anyType xsi:type="DP_MetaContainment">
+        <Name>NewContainment11</Name>
+        <Id>dccc9add-3492-4303-9c67-774e25a7f56b</Id>
+        <Structure xsi:type="DP_MetaContainmentDiagram">
+          <Id>56cb628c-4b49-43e1-aa81-805cf32e5a8f</Id>
+          <Types />
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>d3d0f14d-2a95-47f6-a3dd-a75a891f2a9b</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>327</Width>
+          <Height>29</Height>
+        </Size>
+        <Location>
+          <X>328</X>
+          <Y>16</Y>
+        </Location>
+        <DisplayName>NewContainment11</DisplayName>
+        <ShowName>false</ShowName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>7.8</Size>
+          <Style>Bold</Style>
+        </NameFont>
+        <LineProperties>
+          <BorderColor>
+            <Argb>0</Argb>
+          </BorderColor>
+          <BorderWidth>0</BorderWidth>
+          <FillColor>
+            <Argb>-16777216</Argb>
+          </FillColor>
+          <Role1>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Offset>
+              <X>0</X>
+              <Y>0</Y>
+            </Offset>
+          </Role1>
+          <Role2>
+            <NameVisible>false</NameVisible>
+            <Font>
+              <FontFamily>Segoe UI</FontFamily>
+              <Size>7.8</Size>
+              <Style>Bold</Style>
+            </Font>
+            <Icon>Graphics\diamond.gif</Icon>
+            <Offset>
+              <X>100</X>
+              <Y>0</Y>
+            </Offset>
+          </Role2>
+        </LineProperties>
+        <Role1Id>41e102e1-e9e3-4d6f-82ac-eaab20f70d1d</Role1Id>
+        <Role2Id>a4fec50a-1dc0-485c-bd1d-89182f9049c2</Role2Id>
+      </anyType>
+    </Types>
+  </Structure>
+  <Text xsi:type="DP_Text">
+    <Id>577535e3-00dc-471e-8731-5b4659452f5b</Id>
+    <Instructions />
+  </Text>
+</DP_Metamodel>

@@ -1,0 +1,2480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CollaborationArchitecture2Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>NewCollaborationArchitecture2</Name>
+  <Id>e1c2b060-cd0e-41b5-b881-1d0c1fc33fee</Id>
+  <Structure xsi:type="CollaborationArchitecture2Structure">
+    <Id>5a8f017a-25ee-4cd4-b771-90792a50a926</Id>
+    <Types>
+      <anyType xsi:type="CollabPattern">
+        <Name>P2PinSocialNetwork</Name>
+        <Id>b92f7534-9870-4b0d-a94c-383e1e2a40b4</Id>
+        <Structure xsi:type="CollabPatternStructure">
+          <Id>ee0fa9f0-ed50-495b-a4d6-f3e6e328156f</Id>
+          <Types>
+            <anyType xsi:type="Connector">
+              <Name>PeerNetwork</Name>
+              <Id>d8cba543-700a-4432-adff-ba5ff047d1c9</Id>
+              <Structure xsi:type="ConnectorStructure">
+                <Id>1b5b734c-e996-4809-935e-94705ff577ba</Id>
+                <Types>
+                  <anyType xsi:type="Create">
+                    <Name>FwdMessage</Name>
+                    <Id>5c56b208-a63d-4abd-be9f-38e80e7815a7</Id>
+                    <Structure xsi:type="CreateStructure">
+                      <Id>6c09e3a8-482b-4516-adb2-53d0dfe85d77</Id>
+                      <Types>
+                        <anyType xsi:type="Variable">
+                          <Name>OutMsg</Name>
+                          <Id>a4281c5e-8526-412c-8918-2778b771278d</Id>
+                          <Structure xsi:type="VariableStructure">
+                            <Id>6a490430-5436-463e-b121-769288c44ed1</Id>
+                            <Types />
+                          </Structure>
+                          <Text xsi:type="DP_Text">
+                            <Id>706e3bea-eed2-47f5-bd29-e76294cb55eb</Id>
+                            <Instructions />
+                          </Text>
+                          <Size>
+                            <Width>69</Width>
+                            <Height>21</Height>
+                          </Size>
+                          <Location>
+                            <X>5</X>
+                            <Y>3</Y>
+                          </Location>
+                          <DisplayName>OutMsg</DisplayName>
+                          <NameFont>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <Size>9</Size>
+                            <Style>Regular</Style>
+                          </NameFont>
+                          <ShapeProperties>
+                            <DefaultSize>
+                              <Width>100</Width>
+                              <Height>60</Height>
+                            </DefaultSize>
+                            <BorderColor>
+                              <Argb>-16777216</Argb>
+                            </BorderColor>
+                            <FillColor>
+                              <Argb>0</Argb>
+                            </FillColor>
+                          </ShapeProperties>
+                          <ImplementationType>OutMessage</ImplementationType>
+                        </anyType>
+                      </Types>
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>bdbe55d8-0f46-40bc-a963-c90a3700b7c8</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Run</Name>
+                          <String>while (PeerNetwork.MsgOutbox.Count &gt; 0)
+{
+	OutMsg = PeerNetwork.MsgOutbox.Dequeue();
+	PeerNetwork.P2PinSocialNetwork.PeerList[OutMsg.Receivers[0]].MsgInbox.Enqueue(OutMsg);
+}</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Duration</Name>
+                          <String>return 1;
+</String>
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>118</Width>
+                      <Height>57</Height>
+                    </Size>
+                    <Location>
+                      <X>34</X>
+                      <Y>248</Y>
+                    </Location>
+                    <DisplayName>FwdMessage</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>-1</Argb>
+                      </FillColor>
+                      <CornerRounding>5</CornerRounding>
+                      <Alignment>MiddleCenter</Alignment>
+                    </ShapeProperties>
+                  </anyType>
+                  <anyType xsi:type="CollabMetric">
+                    <Name>MaxRounds</Name>
+                    <Id>7c04408b-9a27-4c98-bd62-993391806116</Id>
+                    <Structure xsi:type="CollabMetricStructure">
+                      <Id>38c2c76d-d900-4a9b-80f1-3a1967d875d5</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>e97bffdc-82a8-4a92-9e95-a25d38aa6d9d</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>80</Width>
+                      <Height>21</Height>
+                    </Size>
+                    <Location>
+                      <X>6</X>
+                      <Y>18</Y>
+                    </Location>
+                    <DisplayName>MaxRounds</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>16777215</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>16777215</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>int</ImplementationType>
+                    <InitialValue>1000</InitialValue>
+                  </anyType>
+                  <anyType xsi:type="Read">
+                    <Name>CacheMsg</Name>
+                    <Id>f4c8a0dc-fc93-44d7-af18-82e807c9185d</Id>
+                    <Structure xsi:type="ReadStructure">
+                      <Id>177e5385-274f-4690-beba-28b354150037</Id>
+                      <Types>
+                        <anyType xsi:type="Variable">
+                          <Name>NextMsg</Name>
+                          <Id>6955cb77-9cab-430b-8441-3fd8e9cfdb92</Id>
+                          <Structure xsi:type="VariableStructure">
+                            <Id>2132f596-994e-4f6f-8582-14545e33e8dd</Id>
+                            <Types />
+                          </Structure>
+                          <Text xsi:type="DP_Text">
+                            <Id>ad9b2eda-2ff2-4820-bb5a-a47eae1ff4e5</Id>
+                            <Instructions />
+                          </Text>
+                          <Size>
+                            <Width>70</Width>
+                            <Height>23</Height>
+                          </Size>
+                          <Location>
+                            <X>6</X>
+                            <Y>38</Y>
+                          </Location>
+                          <DisplayName>NextMsg</DisplayName>
+                          <NameFont>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <Size>9</Size>
+                            <Style>Regular</Style>
+                          </NameFont>
+                          <ShapeProperties>
+                            <DefaultSize>
+                              <Width>100</Width>
+                              <Height>60</Height>
+                            </DefaultSize>
+                            <BorderColor>
+                              <Argb>-16777216</Argb>
+                            </BorderColor>
+                            <FillColor>
+                              <Argb>0</Argb>
+                            </FillColor>
+                          </ShapeProperties>
+                          <ImplementationType>OutMessage</ImplementationType>
+                        </anyType>
+                      </Types>
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>eb617857-0d51-46a5-8a26-030d013a7a30</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Run</Name>
+                          <String>while (PeerNetwork.MsgInbox.Count &gt; 0)
+{
+	NextMsg = PeerNetwork.MsgInbox.Dequeue();
+	if (NextMsg.Receivers != null &amp;&amp; NextMsg.Receivers.Count &gt; 0)
+	{
+		foreach(int receiverId in NextMsg.Receivers)
+		{	
+			OutMessage newMessage = PeerNetwork.P2PinSocialNetwork.Create("OutMessage") as OutMessage;
+			newMessage.Sender = NextMsg.Sender;
+			newMessage.MsgId = NextMsg.MsgId;
+			newMessage.TTL = NextMsg.TTL;
+			newMessage.Receivers.Add(receiverId);
+			PeerNetwork.MsgOutbox.Enqueue(newMessage);
+		}
+	}
+	PeerNetwork.ReceivedMsgs++;
+}			
+NextMsg = null;
+</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Duration</Name>
+                          <String>return 0;
+</String>
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>120</Width>
+                      <Height>59</Height>
+                    </Size>
+                    <Location>
+                      <X>35</X>
+                      <Y>141</Y>
+                    </Location>
+                    <DisplayName>CacheMsg</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>-1</Argb>
+                      </FillColor>
+                      <CornerRounding>5</CornerRounding>
+                      <Alignment>MiddleCenter</Alignment>
+                    </ShapeProperties>
+                  </anyType>
+                  <anyType xsi:type="CollabSequence">
+                    <Name>NewCollabSequence</Name>
+                    <Id>5d2b78c6-8596-4ed1-9ff5-052a6500f85e</Id>
+                    <Structure xsi:type="CollabSequenceStructure">
+                      <Id>3375a8c8-83fe-425b-b08f-064366dc95a4</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>2a6bdd5b-ff4f-487c-ac40-b30b358425df</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Trigger</Name>
+                          <String>return (PeerNetwork.MsgOutbox.Count &gt; 0);
+</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Transfer</Name>
+                          <String />
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>1</Width>
+                      <Height>48</Height>
+                    </Size>
+                    <Location>
+                      <X>131</X>
+                      <Y>200</Y>
+                    </Location>
+                    <DisplayName>NewCollabSequence</DisplayName>
+                    <ShowName>false</ShowName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <LineProperties>
+                      <LineWidth>2</LineWidth>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <BorderWidth>0</BorderWidth>
+                      <FillColor>
+                        <Argb>-16777216</Argb>
+                      </FillColor>
+                      <Role1>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Offset>
+                          <X>96</X>
+                          <Y>59</Y>
+                        </Offset>
+                      </Role1>
+                      <Role2>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Icon>..\..\Icons\triangle.gif</Icon>
+                        <Offset>
+                          <X>98</X>
+                          <Y>0</Y>
+                        </Offset>
+                      </Role2>
+                    </LineProperties>
+                    <Role1Id>f4c8a0dc-fc93-44d7-af18-82e807c9185d</Role1Id>
+                    <Role2Id>5c56b208-a63d-4abd-be9f-38e80e7815a7</Role2Id>
+                  </anyType>
+                  <anyType xsi:type="CollabSequence">
+                    <Name>NewCollabSequence1</Name>
+                    <Id>ab4e1883-a925-45dc-aa4d-eb22c8f2bf46</Id>
+                    <Structure xsi:type="CollabSequenceStructure">
+                      <Id>07220f70-92e1-41fb-b000-7b8bd0c8a480</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>49e357d4-28e9-42e0-bf4a-2c4ffa8c765a</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Trigger</Name>
+                          <String>return true;
+</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Transfer</Name>
+                          <String />
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>1</Width>
+                      <Height>48</Height>
+                    </Size>
+                    <Location>
+                      <X>50</X>
+                      <Y>200</Y>
+                    </Location>
+                    <DisplayName>NewCollabSequence1</DisplayName>
+                    <ShowName>false</ShowName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <LineProperties>
+                      <LineWidth>2</LineWidth>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <BorderWidth>0</BorderWidth>
+                      <FillColor>
+                        <Argb>-16777216</Argb>
+                      </FillColor>
+                      <Role1>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Offset>
+                          <X>16</X>
+                          <Y>0</Y>
+                        </Offset>
+                      </Role1>
+                      <Role2>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Icon>..\..\Icons\triangle.gif</Icon>
+                        <Offset>
+                          <X>16</X>
+                          <Y>59</Y>
+                        </Offset>
+                      </Role2>
+                    </LineProperties>
+                    <Role1Id>5c56b208-a63d-4abd-be9f-38e80e7815a7</Role1Id>
+                    <Role2Id>f4c8a0dc-fc93-44d7-af18-82e807c9185d</Role2Id>
+                  </anyType>
+                  <anyType xsi:type="Work">
+                    <Name>Idle</Name>
+                    <Id>f7cb3bd8-dcf9-4544-8b08-302f09ef164a</Id>
+                    <Structure xsi:type="WorkStructure">
+                      <Id>737813f2-7a19-4c05-9d23-91b96df6461a</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>20d62ad5-5429-423c-a2cf-0b4a4cd8a62b</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Run</Name>
+                          <String />
+                        </Instruction>
+                        <Instruction>
+                          <Name>Duration</Name>
+                          <String>return 1;
+</String>
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>120</Width>
+                      <Height>60</Height>
+                    </Size>
+                    <Location>
+                      <X>49</X>
+                      <Y>40</Y>
+                    </Location>
+                    <DisplayName>Idle</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>-1</Argb>
+                      </FillColor>
+                      <CornerRounding>5</CornerRounding>
+                      <Alignment>MiddleCenter</Alignment>
+                    </ShapeProperties>
+                  </anyType>
+                  <anyType xsi:type="CollabSequence">
+                    <Name>NewCollabSequence2</Name>
+                    <Id>831c42b9-a69d-4a46-8a33-1730cfd66588</Id>
+                    <Structure xsi:type="CollabSequenceStructure">
+                      <Id>7460d658-705c-4d0f-a397-aa8cc426fa36</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>98957899-74fe-48a2-b648-9b16849ad66c</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Trigger</Name>
+                          <String>return (PeerNetwork.MsgOutbox.Count &lt;= 0);
+</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Transfer</Name>
+                          <String />
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>29</Width>
+                      <Height>41</Height>
+                    </Size>
+                    <Location>
+                      <X>84</X>
+                      <Y>100</Y>
+                    </Location>
+                    <DisplayName>NewCollabSequence2</DisplayName>
+                    <ShowName>false</ShowName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <LineProperties>
+                      <LineWidth>2</LineWidth>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <BorderWidth>0</BorderWidth>
+                      <FillColor>
+                        <Argb>-16777216</Argb>
+                      </FillColor>
+                      <Role1>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Offset>
+                          <X>78</X>
+                          <Y>0</Y>
+                        </Offset>
+                      </Role1>
+                      <Role2>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Icon>..\..\Icons\triangle.gif</Icon>
+                        <Offset>
+                          <X>35</X>
+                          <Y>60</Y>
+                        </Offset>
+                      </Role2>
+                    </LineProperties>
+                    <Role1Id>f4c8a0dc-fc93-44d7-af18-82e807c9185d</Role1Id>
+                    <Role2Id>f7cb3bd8-dcf9-4544-8b08-302f09ef164a</Role2Id>
+                  </anyType>
+                  <anyType xsi:type="CollabSequence">
+                    <Name>NewCollabSequence3</Name>
+                    <Id>2600549a-70ca-47ea-84a6-e5a4029df027</Id>
+                    <Structure xsi:type="CollabSequenceStructure">
+                      <Id>d43aedf2-c9c7-4c59-90a2-55eaa7e36fa7</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>9b24b1d1-8275-4bdd-a65c-948983961114</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Trigger</Name>
+                          <String>return true;
+</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Transfer</Name>
+                          <String />
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>12</Width>
+                      <Height>41</Height>
+                    </Size>
+                    <Location>
+                      <X>138</X>
+                      <Y>100</Y>
+                    </Location>
+                    <DisplayName>NewCollabSequence3</DisplayName>
+                    <ShowName>false</ShowName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <LineProperties>
+                      <LineWidth>2</LineWidth>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <BorderWidth>0</BorderWidth>
+                      <FillColor>
+                        <Argb>-16777216</Argb>
+                      </FillColor>
+                      <Role1>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Offset>
+                          <X>101</X>
+                          <Y>60</Y>
+                        </Offset>
+                      </Role1>
+                      <Role2>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Icon>..\..\Icons\triangle.gif</Icon>
+                        <Offset>
+                          <X>103</X>
+                          <Y>0</Y>
+                        </Offset>
+                      </Role2>
+                    </LineProperties>
+                    <Role1Id>f7cb3bd8-dcf9-4544-8b08-302f09ef164a</Role1Id>
+                    <Role2Id>f4c8a0dc-fc93-44d7-af18-82e807c9185d</Role2Id>
+                  </anyType>
+                  <anyType xsi:type="CollabMetric">
+                    <Name>ReceivedMsgs</Name>
+                    <Id>022bc2ea-46c4-4148-a517-b13b23229539</Id>
+                    <Structure xsi:type="CollabMetricStructure">
+                      <Id>3ade7b21-6f09-4416-8a20-255a81dc3b86</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>7e4a704e-5cfa-453d-81f2-9f046c61a9d4</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>95</Width>
+                      <Height>27</Height>
+                    </Size>
+                    <Location>
+                      <X>7</X>
+                      <Y>455</Y>
+                    </Location>
+                    <DisplayName>ReceivedMsgs</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>16777215</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>16777215</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>int</ImplementationType>
+                  </anyType>
+                  <anyType xsi:type="CollabMetric">
+                    <Name>MsgInbox</Name>
+                    <Id>87a80d53-a334-4e52-a305-a3b4b4433fcb</Id>
+                    <Structure xsi:type="CollabMetricStructure">
+                      <Id>afa7c14e-660d-4f38-afab-b6051b3ed418</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>c2536b8d-923a-4bd8-9fc5-5334411a3924</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>80</Width>
+                      <Height>25</Height>
+                    </Size>
+                    <Location>
+                      <X>6</X>
+                      <Y>118</Y>
+                    </Location>
+                    <DisplayName>MsgInbox</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>16777215</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>16777215</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>Queue&lt;OutMessage&gt;</ImplementationType>
+                    <InitialValue>new Queue&lt;OutMessage&gt;()</InitialValue>
+                  </anyType>
+                  <anyType xsi:type="CollabMetric">
+                    <Name>MsgOutbox</Name>
+                    <Id>54232aeb-5a23-4a90-85dd-f513f2bdb88b</Id>
+                    <Structure xsi:type="CollabMetricStructure">
+                      <Id>4b300961-e21a-4a27-b343-156259b069cb</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>985b149f-e38c-41ce-a6a9-878f76e26575</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>80</Width>
+                      <Height>26</Height>
+                    </Size>
+                    <Location>
+                      <X>7</X>
+                      <Y>311</Y>
+                    </Location>
+                    <DisplayName>MsgOutbox</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>16777215</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>16777215</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>Queue&lt;OutMessage&gt;</ImplementationType>
+                    <InitialValue>new Queue&lt;OutMessage&gt;()</InitialValue>
+                  </anyType>
+                </Types>
+              </Structure>
+              <Text xsi:type="DP_Text">
+                <Id>ba48fa65-e7dc-4e84-9748-51e3ccac891f</Id>
+                <Instructions />
+              </Text>
+              <Size>
+                <Width>213</Width>
+                <Height>485</Height>
+              </Size>
+              <Location>
+                <X>535</X>
+                <Y>28</Y>
+              </Location>
+              <DisplayName>PeerNetwork</DisplayName>
+              <NameFont>
+                <FontFamily>Segoe UI</FontFamily>
+                <Size>9</Size>
+                <Style>Bold</Style>
+              </NameFont>
+              <ShapeProperties>
+                <DefaultSize>
+                  <Width>100</Width>
+                  <Height>60</Height>
+                </DefaultSize>
+                <BorderColor>
+                  <Argb>-16777216</Argb>
+                </BorderColor>
+                <BorderWidth>3</BorderWidth>
+                <FillColor>
+                  <Argb>-21</Argb>
+                </FillColor>
+                <Alignment>TopCenter</Alignment>
+              </ShapeProperties>
+            </anyType>
+            <anyType xsi:type="CollabConnection">
+              <Name>NewCollabConnection</Name>
+              <Id>2e3c2806-e1ea-4322-8b0a-0834f8007ae3</Id>
+              <Structure xsi:type="CollabConnectionStructure">
+                <Id>5a6d123b-1a75-4c32-b1dd-83196eebbeed</Id>
+                <Types />
+              </Structure>
+              <Text xsi:type="DP_Text">
+                <Id>3c4e1294-ff81-4d10-9fb6-2b8ca2470e57</Id>
+                <Instructions />
+              </Text>
+              <Size>
+                <Width>77</Width>
+                <Height>56</Height>
+              </Size>
+              <Location>
+                <X>322</X>
+                <Y>99</Y>
+              </Location>
+              <DisplayName>NewCollabConnection</DisplayName>
+              <ShowName>false</ShowName>
+              <NameFont>
+                <FontFamily>Segoe UI</FontFamily>
+                <Size>9</Size>
+                <Style>Regular</Style>
+              </NameFont>
+              <LineProperties>
+                <LineWidth>2</LineWidth>
+                <BorderColor>
+                  <Argb>-16777216</Argb>
+                </BorderColor>
+                <BorderWidth>0</BorderWidth>
+                <FillStyle>Dash</FillStyle>
+                <FillColor>
+                  <Argb>-16777216</Argb>
+                </FillColor>
+                <Role1>
+                  <Font>
+                    <FontFamily>Segoe UI</FontFamily>
+                    <Size>9</Size>
+                    <Style>Regular</Style>
+                  </Font>
+                  <Offset>
+                    <X>208</X>
+                    <Y>34</Y>
+                  </Offset>
+                </Role1>
+                <Role2>
+                  <Font>
+                    <FontFamily>Segoe UI</FontFamily>
+                    <Size>9</Size>
+                    <Style>Regular</Style>
+                  </Font>
+                  <Icon>..\..\Icons\triangle.gif</Icon>
+                  <Offset>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Offset>
+                </Role2>
+              </LineProperties>
+              <Role1Id>b25c833d-6e26-4170-8b81-27e57bbea2f9</Role1Id>
+              <Role2Id>2fca0eb8-b7a2-46b2-a95a-b2d1cefa90fe</Role2Id>
+            </anyType>
+            <anyType xsi:type="TriggerConnection">
+              <Name>NewTriggerConnection</Name>
+              <Id>e5a0a82e-1455-47d6-944b-a868e6593f18</Id>
+              <Structure xsi:type="TriggerConnectionStructure">
+                <Id>88be5091-c4ed-46b7-8f05-7f9fc243e5b2</Id>
+                <Types />
+              </Structure>
+              <Text xsi:type="DP_Text">
+                <Id>2afc3b49-8e62-4fd3-9231-65edaaa4228a</Id>
+                <Instructions />
+              </Text>
+              <Size>
+                <Width>78</Width>
+                <Height>37</Height>
+              </Size>
+              <Location>
+                <X>492</X>
+                <Y>155</Y>
+              </Location>
+              <DisplayName>NewTriggerConnection</DisplayName>
+              <ShowName>false</ShowName>
+              <NameFont>
+                <FontFamily>Segoe UI</FontFamily>
+                <Size>9</Size>
+                <Style>Regular</Style>
+              </NameFont>
+              <LineProperties>
+                <LineWidth>2</LineWidth>
+                <BorderColor>
+                  <Argb>-16777216</Argb>
+                </BorderColor>
+                <BorderWidth>0</BorderWidth>
+                <FillStyle>Dot</FillStyle>
+                <FillColor>
+                  <Argb>-16777216</Argb>
+                </FillColor>
+                <Role1>
+                  <Font>
+                    <FontFamily>Segoe UI</FontFamily>
+                    <Size>9</Size>
+                    <Style>Regular</Style>
+                  </Font>
+                  <Offset>
+                    <X>93</X>
+                    <Y>0</Y>
+                  </Offset>
+                </Role1>
+                <Role2>
+                  <Font>
+                    <FontFamily>Segoe UI</FontFamily>
+                    <Size>9</Size>
+                    <Style>Regular</Style>
+                  </Font>
+                  <Icon>..\..\Icons\triangle.gif</Icon>
+                  <Offset>
+                    <X>0</X>
+                    <Y>23</Y>
+                  </Offset>
+                </Role2>
+              </LineProperties>
+              <Role1Id>2fca0eb8-b7a2-46b2-a95a-b2d1cefa90fe</Role1Id>
+              <Role2Id>f4c8a0dc-fc93-44d7-af18-82e807c9185d</Role2Id>
+            </anyType>
+            <anyType xsi:type="Actor">
+              <Name>Peer</Name>
+              <Id>891e5650-7d1c-496a-be61-14fe2d2cdbb9</Id>
+              <Structure xsi:type="ActorStructure">
+                <Id>693822ef-47d2-4621-99f8-6c7bd36fe3eb</Id>
+                <Types>
+                  <anyType xsi:type="Read">
+                    <Name>Read</Name>
+                    <Id>375c8172-7273-43b0-85b1-0ea7ee290b83</Id>
+                    <Structure xsi:type="ReadStructure">
+                      <Id>341a6955-534c-4536-92e6-86202d204983</Id>
+                      <Types>
+                        <anyType xsi:type="Variable">
+                          <Name>inMsg</Name>
+                          <Id>a074da12-bc5a-43ad-a021-aa779b8ba71e</Id>
+                          <Structure xsi:type="VariableStructure">
+                            <Id>9fff264c-d7f1-4c30-ba42-a4c38f91f201</Id>
+                            <Types />
+                          </Structure>
+                          <Text xsi:type="DP_Text">
+                            <Id>3f35e04f-702c-4f93-bc01-6aa119905899</Id>
+                            <Instructions />
+                          </Text>
+                          <Size>
+                            <Width>68</Width>
+                            <Height>22</Height>
+                          </Size>
+                          <Location>
+                            <X>13</X>
+                            <Y>4</Y>
+                          </Location>
+                          <DisplayName>inMsg</DisplayName>
+                          <NameFont>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <Size>9</Size>
+                            <Style>Regular</Style>
+                          </NameFont>
+                          <ShapeProperties>
+                            <DefaultSize>
+                              <Width>100</Width>
+                              <Height>60</Height>
+                            </DefaultSize>
+                            <BorderColor>
+                              <Argb>-16777216</Argb>
+                            </BorderColor>
+                            <FillColor>
+                              <Argb>0</Argb>
+                            </FillColor>
+                          </ShapeProperties>
+                          <ImplementationType>OutMessage</ImplementationType>
+                        </anyType>
+                      </Types>
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>7ec72611-2a22-4a37-8ea2-d1cb7f9a7ab4</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Run</Name>
+                          <String>while (Peer.MsgInbox.Count &gt; 0)
+{
+	inMsg = Peer.MsgInbox.Dequeue();
+	inMsg.TTL--;
+	if (inMsg.TTL &gt; 0)
+	{		
+		Peer.MsgFwdbox.Enqueue(inMsg);		
+	}
+	Peer.PeerReceivedMsgs.Add(inMsg.MsgId);
+	Peer.ReceivedCounter++;
+}			
+inMsg = null;</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Duration</Name>
+                          <String>return 1;
+</String>
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>202</Width>
+                      <Height>53</Height>
+                    </Size>
+                    <Location>
+                      <X>88</X>
+                      <Y>366</Y>
+                    </Location>
+                    <DisplayName>Read</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>-1</Argb>
+                      </FillColor>
+                      <CornerRounding>5</CornerRounding>
+                      <Alignment>MiddleCenter</Alignment>
+                    </ShapeProperties>
+                  </anyType>
+                  <anyType xsi:type="Work">
+                    <Name>NextStep</Name>
+                    <Id>f5158e2c-d15a-4e72-99e2-88c48d2e9c7d</Id>
+                    <Structure xsi:type="WorkStructure">
+                      <Id>a27e0572-d13d-4349-85c4-05878cac8812</Id>
+                      <Types>
+                        <anyType xsi:type="Variable">
+                          <Name>NextAction</Name>
+                          <Id>f4d0fd02-36ff-4bb7-adb4-d71db2542874</Id>
+                          <Structure xsi:type="VariableStructure">
+                            <Id>c1ab638b-d6af-47cf-aaa4-bfa20b0c7f08</Id>
+                            <Types />
+                          </Structure>
+                          <Text xsi:type="DP_Text">
+                            <Id>5f887d3a-da07-46f8-b0a1-bae2f9f08548</Id>
+                            <Instructions />
+                          </Text>
+                          <Size>
+                            <Width>100</Width>
+                            <Height>21</Height>
+                          </Size>
+                          <Location>
+                            <X>12</X>
+                            <Y>34</Y>
+                          </Location>
+                          <DisplayName>NextAction</DisplayName>
+                          <NameFont>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <Size>9</Size>
+                            <Style>Regular</Style>
+                          </NameFont>
+                          <ShapeProperties>
+                            <DefaultSize>
+                              <Width>100</Width>
+                              <Height>60</Height>
+                            </DefaultSize>
+                            <BorderColor>
+                              <Argb>-16777216</Argb>
+                            </BorderColor>
+                            <FillColor>
+                              <Argb>0</Argb>
+                            </FillColor>
+                          </ShapeProperties>
+                          <ImplementationType>double</ImplementationType>
+                        </anyType>
+                      </Types>
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>edacb987-d6cd-46f7-aa7a-a15ce818492c</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Run</Name>
+                          <String>NextAction = Model.Simulation.Simulator.Random;
+</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Duration</Name>
+                          <String>return 0;
+</String>
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>120</Width>
+                      <Height>58</Height>
+                    </Size>
+                    <Location>
+                      <X>177</X>
+                      <Y>209</Y>
+                    </Location>
+                    <DisplayName>NextStep</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>-1</Argb>
+                      </FillColor>
+                      <CornerRounding>5</CornerRounding>
+                      <Alignment>MiddleCenter</Alignment>
+                    </ShapeProperties>
+                  </anyType>
+                  <anyType xsi:type="CollabSequence">
+                    <Name>PeerCollabSequence</Name>
+                    <Id>0b8d0766-3498-4d0a-ab4d-0434dd01dc39</Id>
+                    <Structure xsi:type="CollabSequenceStructure">
+                      <Id>6e142e7c-85af-4ff3-a296-3b7b3aa39483</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>79cc59aa-d4e2-4a8e-89ce-2d5a9ea892b6</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Trigger</Name>
+                          <String>return (Peer.MsgInbox.Count &lt;= 0);
+</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Transfer</Name>
+                          <String />
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>2</Width>
+                      <Height>99</Height>
+                    </Size>
+                    <Location>
+                      <X>226</X>
+                      <Y>267</Y>
+                    </Location>
+                    <DisplayName>PeerCollabSequence</DisplayName>
+                    <ShowName>false</ShowName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <LineProperties>
+                      <LineWidth>2</LineWidth>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <BorderWidth>0</BorderWidth>
+                      <FillColor>
+                        <Argb>-16777216</Argb>
+                      </FillColor>
+                      <Role1>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Offset>
+                          <X>138</X>
+                          <Y>0</Y>
+                        </Offset>
+                      </Role1>
+                      <Role2>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Icon>..\..\Icons\triangle.gif</Icon>
+                        <Offset>
+                          <X>51</X>
+                          <Y>58</Y>
+                        </Offset>
+                      </Role2>
+                    </LineProperties>
+                    <Role1Id>375c8172-7273-43b0-85b1-0ea7ee290b83</Role1Id>
+                    <Role2Id>f5158e2c-d15a-4e72-99e2-88c48d2e9c7d</Role2Id>
+                  </anyType>
+                  <anyType xsi:type="CollabSequence">
+                    <Name>PeerCollabSequence2</Name>
+                    <Id>739ee44c-bf2a-4bc7-8182-a828d7b11017</Id>
+                    <Structure xsi:type="CollabSequenceStructure">
+                      <Id>de9d5049-b1f7-42a5-8e53-c3742ef97999</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>c49a2100-9f8f-44ae-a599-8b8a18c90563</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Trigger</Name>
+                          <String>return true;
+</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Transfer</Name>
+                          <String />
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>15</Width>
+                      <Height>151</Height>
+                    </Size>
+                    <Location>
+                      <X>279</X>
+                      <Y>58</Y>
+                    </Location>
+                    <DisplayName>PeerCollabSequence2</DisplayName>
+                    <ShowName>false</ShowName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <LineProperties>
+                      <LineWidth>2</LineWidth>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <BorderWidth>0</BorderWidth>
+                      <FillColor>
+                        <Argb>-16777216</Argb>
+                      </FillColor>
+                      <Role1>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Offset>
+                          <X>185</X>
+                          <Y>34</Y>
+                        </Offset>
+                      </Role1>
+                      <Role2>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Icon>..\..\Icons\triangle.gif</Icon>
+                        <Offset>
+                          <X>102</X>
+                          <Y>0</Y>
+                        </Offset>
+                      </Role2>
+                    </LineProperties>
+                    <Role1Id>b25c833d-6e26-4170-8b81-27e57bbea2f9</Role1Id>
+                    <Role2Id>f5158e2c-d15a-4e72-99e2-88c48d2e9c7d</Role2Id>
+                  </anyType>
+                  <anyType xsi:type="CollabSequence">
+                    <Name>PeerCollabSequence3</Name>
+                    <Id>b8a8a074-d16b-4b92-a626-3478ee80620e</Id>
+                    <Structure xsi:type="CollabSequenceStructure">
+                      <Id>5ca380d6-1a36-4394-83cd-d87303849689</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>febec267-12d3-47e6-b3e9-16cb3e4a5716</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Trigger</Name>
+                          <String>return (Peer.MsgInbox.Count &gt; 0);
+</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Transfer</Name>
+                          <String />
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>3</Width>
+                      <Height>308</Height>
+                    </Size>
+                    <Location>
+                      <X>153</X>
+                      <Y>58</Y>
+                    </Location>
+                    <DisplayName>PeerCollabSequence3</DisplayName>
+                    <ShowName>false</ShowName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <LineProperties>
+                      <LineWidth>2</LineWidth>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <BorderWidth>0</BorderWidth>
+                      <FillColor>
+                        <Argb>-16777216</Argb>
+                      </FillColor>
+                      <Role1>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Offset>
+                          <X>68</X>
+                          <Y>0</Y>
+                        </Offset>
+                      </Role1>
+                      <Role2>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Icon>..\..\Icons\triangle.gif</Icon>
+                        <Offset>
+                          <X>44</X>
+                          <Y>34</Y>
+                        </Offset>
+                      </Role2>
+                    </LineProperties>
+                    <Role1Id>375c8172-7273-43b0-85b1-0ea7ee290b83</Role1Id>
+                    <Role2Id>b25c833d-6e26-4170-8b81-27e57bbea2f9</Role2Id>
+                  </anyType>
+                  <anyType xsi:type="CollabSequence">
+                    <Name>PeerCollabSequence4</Name>
+                    <Id>0112ea0b-5962-4fb9-b179-5662a7e48b06</Id>
+                    <Structure xsi:type="CollabSequenceStructure">
+                      <Id>ba067261-044e-4c58-8636-a3cce3865bf8</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>ae1e83b7-78a1-4c8c-9264-ffa407827eb9</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Trigger</Name>
+                          <String>return (NextStep.NextAction &lt; Peer.CreateFrequency);
+</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Transfer</Name>
+                          <String />
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>2</Width>
+                      <Height>63</Height>
+                    </Size>
+                    <Location>
+                      <X>196</X>
+                      <Y>146</Y>
+                    </Location>
+                    <DisplayName>PeerCollabSequence4</DisplayName>
+                    <ShowName>false</ShowName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <LineProperties>
+                      <LineWidth>2</LineWidth>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <BorderWidth>0</BorderWidth>
+                      <FillColor>
+                        <Argb>-16777216</Argb>
+                      </FillColor>
+                      <Role1>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Offset>
+                          <X>19</X>
+                          <Y>0</Y>
+                        </Offset>
+                      </Role1>
+                      <Role2>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Icon>..\..\Icons\triangle.gif</Icon>
+                        <Offset>
+                          <X>24</X>
+                          <Y>68</Y>
+                        </Offset>
+                      </Role2>
+                    </LineProperties>
+                    <Role1Id>f5158e2c-d15a-4e72-99e2-88c48d2e9c7d</Role1Id>
+                    <Role2Id>d4210a56-9fd4-4a62-8b95-712f3c498320</Role2Id>
+                  </anyType>
+                  <anyType xsi:type="CollabSequence">
+                    <Name>PeerCollabSequence5</Name>
+                    <Id>a3e66efc-3b71-4a62-bb02-6504d5001fe3</Id>
+                    <Structure xsi:type="CollabSequenceStructure">
+                      <Id>5b91848a-badc-487a-afd6-4196b444ae8f</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>52a1880e-183f-475b-85a7-9ce37b485ef2</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Trigger</Name>
+                          <String>return true;
+</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Transfer</Name>
+                          <String />
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>10</Width>
+                      <Height>63</Height>
+                    </Size>
+                    <Location>
+                      <X>237</X>
+                      <Y>146</Y>
+                    </Location>
+                    <DisplayName>PeerCollabSequence5</DisplayName>
+                    <ShowName>false</ShowName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <LineProperties>
+                      <LineWidth>2</LineWidth>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <BorderWidth>0</BorderWidth>
+                      <FillColor>
+                        <Argb>-16777216</Argb>
+                      </FillColor>
+                      <Role1>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Offset>
+                          <X>63</X>
+                          <Y>68</Y>
+                        </Offset>
+                      </Role1>
+                      <Role2>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Icon>..\..\Icons\triangle.gif</Icon>
+                        <Offset>
+                          <X>70</X>
+                          <Y>0</Y>
+                        </Offset>
+                      </Role2>
+                    </LineProperties>
+                    <Role1Id>d4210a56-9fd4-4a62-8b95-712f3c498320</Role1Id>
+                    <Role2Id>f5158e2c-d15a-4e72-99e2-88c48d2e9c7d</Role2Id>
+                  </anyType>
+                  <anyType xsi:type="Create">
+                    <Name>FwdCreate</Name>
+                    <Id>b25c833d-6e26-4170-8b81-27e57bbea2f9</Id>
+                    <Structure xsi:type="CreateStructure">
+                      <Id>9b3bce0f-ca43-4e74-b44d-3838679b8f65</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>9743cfa7-b50f-4f8e-a6e4-556fcaa4282b</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Run</Name>
+                          <String />
+                        </Instruction>
+                        <Instruction>
+                          <Name>Duration</Name>
+                          <String>return 1;
+</String>
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>208</Width>
+                      <Height>34</Height>
+                    </Size>
+                    <Location>
+                      <X>109</X>
+                      <Y>24</Y>
+                    </Location>
+                    <DisplayName>FwdCreate</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>-1</Argb>
+                      </FillColor>
+                      <CornerRounding>5</CornerRounding>
+                      <Alignment>MiddleCenter</Alignment>
+                    </ShapeProperties>
+                  </anyType>
+                  <anyType xsi:type="Create">
+                    <Name>CreateMsg</Name>
+                    <Id>d4210a56-9fd4-4a62-8b95-712f3c498320</Id>
+                    <Structure xsi:type="CreateStructure">
+                      <Id>5960d2c1-03ae-4822-aa65-4b608600cb2c</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>f0b9581c-a1d1-4273-88f9-6958bef986c2</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Run</Name>
+                          <String>//OutMessage newMessage = new OutMessage();
+OutMessage newMessage = Peer.P2PinSocialNetwork.Create("OutMessage") as OutMessage;
+newMessage.Sender = Peer.PeerID;
+newMessage.MsgId = Peer.OriginMsgCounter+"@"+ Peer.PeerID;
+newMessage.TTL = 3;
+
+for( int i=0 ; i&lt;2 ; i++)
+{
+	int id = System.Convert.ToInt32(Math.Floor(Model.Simulation.Simulator.Random * System.Convert.ToDouble(Peer.P2PinSocialNetwork.PeerList.Count)));
+	newMessage.Receivers.Add(id);
+}
+
+Peer.OriginMsgCounter++;
+//Peer.P2PinSocialNetwork.PeerNetworkList[0].MsgInbox.Enqueue(newMessage);
+newMessage.MsgCreated();	
+
+// NewCollabConnection1 returns Object Type of MsgCreated
+// NewCollabConnection1.NewTriggerConnection return CacheMsg object
+</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Duration</Name>
+                          <String>return 1;
+</String>
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>130</Width>
+                      <Height>68</Height>
+                    </Size>
+                    <Location>
+                      <X>174</X>
+                      <Y>78</Y>
+                    </Location>
+                    <DisplayName>CreateMsg</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>-1</Argb>
+                      </FillColor>
+                      <CornerRounding>5</CornerRounding>
+                      <Alignment>MiddleCenter</Alignment>
+                    </ShapeProperties>
+                  </anyType>
+                  <anyType xsi:type="CollabSequence">
+                    <Name>PeerCollabSequence1</Name>
+                    <Id>e72e850d-de9c-4e0a-ae4a-b7da8028e573</Id>
+                    <Structure xsi:type="CollabSequenceStructure">
+                      <Id>fb12a6e1-8fad-43b4-9c78-a6e284fcf8b4</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>dd4440c5-8f75-4a43-a629-27b9e6c2ad9c</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Trigger</Name>
+                          <String>return (NextStep.NextAction &gt;= Peer.CreateFrequency);
+</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Transfer</Name>
+                          <String />
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>16</Width>
+                      <Height>99</Height>
+                    </Size>
+                    <Location>
+                      <X>177</X>
+                      <Y>267</Y>
+                    </Location>
+                    <DisplayName>PeerCollabSequence1</DisplayName>
+                    <ShowName>false</ShowName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <LineProperties>
+                      <LineWidth>2</LineWidth>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <BorderWidth>0</BorderWidth>
+                      <FillColor>
+                        <Argb>-16777216</Argb>
+                      </FillColor>
+                      <Role1>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Offset>
+                          <X>0</X>
+                          <Y>58</Y>
+                        </Offset>
+                      </Role1>
+                      <Role2>
+                        <Font>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <Size>9</Size>
+                          <Style>Regular</Style>
+                        </Font>
+                        <Icon>..\..\Icons\triangle.gif</Icon>
+                        <Offset>
+                          <X>105</X>
+                          <Y>0</Y>
+                        </Offset>
+                      </Role2>
+                    </LineProperties>
+                    <Role1Id>f5158e2c-d15a-4e72-99e2-88c48d2e9c7d</Role1Id>
+                    <Role2Id>375c8172-7273-43b0-85b1-0ea7ee290b83</Role2Id>
+                  </anyType>
+                  <anyType xsi:type="CollabMetric">
+                    <Name>FriendList</Name>
+                    <Id>e9411e6c-3cd1-4fb2-8bd9-054fc4d180da</Id>
+                    <Structure xsi:type="CollabMetricStructure">
+                      <Id>1b2b8694-d8fd-4ce0-878c-eeae86548088</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>cffe5094-f7a2-4259-a19c-c9bdb0e5f7fa</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>80</Width>
+                      <Height>25</Height>
+                    </Size>
+                    <Location>
+                      <X>3</X>
+                      <Y>4</Y>
+                    </Location>
+                    <DisplayName>FriendList</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>16777215</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>16777215</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>List&lt;int&gt;</ImplementationType>
+                    <InitialValue>new List&lt;int&gt;()</InitialValue>
+                  </anyType>
+                  <anyType xsi:type="CollabMetric">
+                    <Name>PeerReceivedMsgs</Name>
+                    <Id>d401697c-8f28-424c-bc35-8130d27a63cd</Id>
+                    <Structure xsi:type="CollabMetricStructure">
+                      <Id>4da72c07-920a-4228-a295-beeea28ee95b</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>3428ec9b-944f-4255-945b-f4c3d4e95fe7</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>107</Width>
+                      <Height>22</Height>
+                    </Size>
+                    <Location>
+                      <X>6</X>
+                      <Y>301</Y>
+                    </Location>
+                    <DisplayName>PeerReceivedMsgs</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>16777215</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>16777215</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>List&lt;String&gt;</ImplementationType>
+                    <InitialValue>new List&lt;String&gt;()</InitialValue>
+                  </anyType>
+                  <anyType xsi:type="CollabMetric">
+                    <Name>OriginMsgCounter</Name>
+                    <Id>d496d81e-2f98-4316-89e0-3006057572ed</Id>
+                    <Structure xsi:type="CollabMetricStructure">
+                      <Id>b4b9cab0-a4d2-4efa-ae0e-b38b351e3a6d</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>9e0237e3-a465-4eab-ac72-ab30e93de4b7</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>108</Width>
+                      <Height>19</Height>
+                    </Size>
+                    <Location>
+                      <X>3</X>
+                      <Y>21</Y>
+                    </Location>
+                    <DisplayName>OriginMsgCounter</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>16777215</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>16777215</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>int</ImplementationType>
+                  </anyType>
+                  <anyType xsi:type="CollabMetric">
+                    <Name>PeerID</Name>
+                    <Id>a3557a1d-e283-4267-9bad-017d8f682187</Id>
+                    <Structure xsi:type="CollabMetricStructure">
+                      <Id>a6a8f105-1c6f-456f-b535-41218baa2d3e</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>7ab6a313-373b-41c6-a7ae-3858f09b4191</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>80</Width>
+                      <Height>25</Height>
+                    </Size>
+                    <Location>
+                      <X>8</X>
+                      <Y>434</Y>
+                    </Location>
+                    <DisplayName>PeerID</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>16777215</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>16777215</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>string</ImplementationType>
+                  </anyType>
+                  <anyType xsi:type="CollabMetric">
+                    <Name>MsgInbox</Name>
+                    <Id>2f3d2fcf-3499-445c-a4a9-9733126b0ca6</Id>
+                    <Structure xsi:type="CollabMetricStructure">
+                      <Id>3d45eeea-fba3-404c-ae5c-d731d882ba46</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>04bf1212-b527-4de8-ba72-d956a15d07b0</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>80</Width>
+                      <Height>23</Height>
+                    </Size>
+                    <Location>
+                      <X>213</X>
+                      <Y>422</Y>
+                    </Location>
+                    <DisplayName>MsgInbox</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>16777215</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>16777215</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>Queue&lt;OutMessage&gt;</ImplementationType>
+                    <InitialValue>new Queue&lt;OutMessage&gt;()</InitialValue>
+                  </anyType>
+                  <anyType xsi:type="CollabMetric">
+                    <Name>MsgFwdbox</Name>
+                    <Id>46863341-8fb0-4706-bb87-9fc6c6eb9988</Id>
+                    <Structure xsi:type="CollabMetricStructure">
+                      <Id>c59761eb-fe34-482f-86c7-49ffa34ef57b</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>9e7db181-369c-461c-b17b-0da9627fc52f</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>80</Width>
+                      <Height>23</Height>
+                    </Size>
+                    <Location>
+                      <X>69</X>
+                      <Y>82</Y>
+                    </Location>
+                    <DisplayName>MsgFwdbox</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>16777215</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>16777215</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>Queue&lt;OutMessage&gt;</ImplementationType>
+                    <InitialValue>new Queue&lt;OutMessage&gt;()</InitialValue>
+                  </anyType>
+                  <anyType xsi:type="CollabMetric">
+                    <Name>ReceivedCounter</Name>
+                    <Id>610f1bbf-7309-4ccc-99f1-bb16cd8ae26b</Id>
+                    <Structure xsi:type="CollabMetricStructure">
+                      <Id>cd55f5f9-dfb1-4ec1-8d11-b6d852a99078</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>27e8b921-85ff-4d0c-b8fe-f076e2591a81</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>106</Width>
+                      <Height>25</Height>
+                    </Size>
+                    <Location>
+                      <X>6</X>
+                      <Y>320</Y>
+                    </Location>
+                    <DisplayName>ReceivedCounter</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>16777215</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>16777215</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>int</ImplementationType>
+                    <InitialValue>0</InitialValue>
+                  </anyType>
+                </Types>
+              </Structure>
+              <Text xsi:type="DP_Text">
+                <Id>1172af2f-08ce-466a-9b9d-4d14e6bf841d</Id>
+                <Instructions />
+              </Text>
+              <Size>
+                <Width>327</Width>
+                <Height>471</Height>
+              </Size>
+              <Location>
+                <X>5</X>
+                <Y>41</Y>
+              </Location>
+              <DisplayName>Peer</DisplayName>
+              <NameFont>
+                <FontFamily>Segoe UI</FontFamily>
+                <Size>9</Size>
+                <Style>Bold</Style>
+              </NameFont>
+              <ShapeProperties>
+                <DefaultSize>
+                  <Width>100</Width>
+                  <Height>60</Height>
+                </DefaultSize>
+                <BorderColor>
+                  <Argb>-16777216</Argb>
+                </BorderColor>
+                <BorderWidth>3</BorderWidth>
+                <FillColor>
+                  <Argb>-21</Argb>
+                </FillColor>
+                <Alignment>TopCenter</Alignment>
+              </ShapeProperties>
+              <ReadFrequency>0.95</ReadFrequency>
+              <CreateFrequency>0.05</CreateFrequency>
+            </anyType>
+            <anyType xsi:type="CollabObject">
+              <Name>OutMessage</Name>
+              <Id>5228a580-4ca0-412a-8bfa-3a1ec78aad3e</Id>
+              <Structure xsi:type="CollabObjectStructure">
+                <Id>813e5bf4-db75-452f-b450-3f0d22ba2632</Id>
+                <Types>
+                  <anyType xsi:type="ObjectMetadata">
+                    <Name>Sender</Name>
+                    <Id>edd41d5b-5fa2-4457-a600-13822fbc87e8</Id>
+                    <Structure xsi:type="ObjectMetadataStructure">
+                      <Id>a607e427-8fa5-4259-99a7-b7eba01606fb</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>def0e5ca-c092-4d02-b00d-dac2e55fba29</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>61</Width>
+                      <Height>25</Height>
+                    </Size>
+                    <Location>
+                      <X>27</X>
+                      <Y>111</Y>
+                    </Location>
+                    <DisplayName>Sender</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>0</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>string</ImplementationType>
+                  </anyType>
+                  <anyType xsi:type="ObjectMetadata">
+                    <Name>Receivers</Name>
+                    <Id>e51c34b0-3e8e-4aad-ae16-4c1d7de014c9</Id>
+                    <Structure xsi:type="ObjectMetadataStructure">
+                      <Id>9432fde6-fe5c-4c1f-99ef-23ab6a27e4ae</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>11921433-a136-459f-af66-f53369311603</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>71</Width>
+                      <Height>24</Height>
+                    </Size>
+                    <Location>
+                      <X>27</X>
+                      <Y>141</Y>
+                    </Location>
+                    <DisplayName>Receivers</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>0</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>List&lt;int&gt;</ImplementationType>
+                    <InitialValue>new List&lt;int&gt;()</InitialValue>
+                  </anyType>
+                  <anyType xsi:type="Trigger">
+                    <Name>MsgCreated</Name>
+                    <Id>2fca0eb8-b7a2-46b2-a95a-b2d1cefa90fe</Id>
+                    <Structure xsi:type="TriggerStructure">
+                      <Id>d6486f28-25d8-45b6-9e2f-1d360b9b2633</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>84c58de5-345c-4d46-9cf3-ba7b8dcda7b4</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Run</Name>
+                          <String>OutMessage.P2PinSocialNetwork.PeerNetworkList[0].MsgInbox.Enqueue(OutMessage);
+</String>
+                        </Instruction>
+                        <Instruction>
+                          <Name>Duration</Name>
+                          <String>return 0;
+</String>
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>93</Width>
+                      <Height>23</Height>
+                    </Size>
+                    <Location>
+                      <X>14</X>
+                      <Y>61</Y>
+                    </Location>
+                    <DisplayName>MsgCreated</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>0</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                  </anyType>
+                  <anyType xsi:type="ObjectMetadata">
+                    <Name>MsgId</Name>
+                    <Id>807aefc7-fe80-4978-83bd-70d4bba81f24</Id>
+                    <Structure xsi:type="ObjectMetadataStructure">
+                      <Id>51839344-674d-4bf4-8ce1-39d48ed1cd14</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>f3c89783-2089-451e-b297-7725ea8fa528</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>57</Width>
+                      <Height>22</Height>
+                    </Size>
+                    <Location>
+                      <X>34</X>
+                      <Y>86</Y>
+                    </Location>
+                    <DisplayName>MsgId</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>0</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>string</ImplementationType>
+                  </anyType>
+                  <anyType xsi:type="Trigger">
+                    <Name>MsgDelivered</Name>
+                    <Id>ed9e73d9-6007-4093-9874-53eb0b53f498</Id>
+                    <Structure xsi:type="TriggerStructure">
+                      <Id>349ec086-9a96-4085-9ad8-44a8f14cabe9</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>93a78ef8-d569-4ea1-835d-b29a242b9ada</Id>
+                      <Instructions>
+                        <Instruction>
+                          <Name>Run</Name>
+                          <String />
+                        </Instruction>
+                        <Instruction>
+                          <Name>Duration</Name>
+                          <String>return 0;
+</String>
+                        </Instruction>
+                      </Instructions>
+                    </Text>
+                    <Size>
+                      <Width>100</Width>
+                      <Height>24</Height>
+                    </Size>
+                    <Location>
+                      <X>8</X>
+                      <Y>250</Y>
+                    </Location>
+                    <DisplayName>MsgDelivered</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>0</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                  </anyType>
+                  <anyType xsi:type="ObjectMetadata">
+                    <Name>TTL</Name>
+                    <Id>37828b86-4800-4929-b830-e6313d8b562a</Id>
+                    <Structure xsi:type="ObjectMetadataStructure">
+                      <Id>3eb308bf-1d85-41c7-b7ea-5bbd5afffdc2</Id>
+                      <Types />
+                    </Structure>
+                    <Text xsi:type="DP_Text">
+                      <Id>eb2dbc42-03b3-4048-b74b-99795d6de2cb</Id>
+                      <Instructions />
+                    </Text>
+                    <Size>
+                      <Width>38</Width>
+                      <Height>22</Height>
+                    </Size>
+                    <Location>
+                      <X>46</X>
+                      <Y>321</Y>
+                    </Location>
+                    <DisplayName>TTL</DisplayName>
+                    <NameFont>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <Size>9</Size>
+                      <Style>Regular</Style>
+                    </NameFont>
+                    <ShapeProperties>
+                      <DefaultSize>
+                        <Width>100</Width>
+                        <Height>60</Height>
+                      </DefaultSize>
+                      <BorderColor>
+                        <Argb>-16777216</Argb>
+                      </BorderColor>
+                      <FillColor>
+                        <Argb>0</Argb>
+                      </FillColor>
+                    </ShapeProperties>
+                    <ImplementationType>int</ImplementationType>
+                    <InitialValue>1</InitialValue>
+                  </anyType>
+                </Types>
+              </Structure>
+              <Text xsi:type="DP_Text">
+                <Id>67002cf3-627d-4fef-8a5d-8d2ca9c49d52</Id>
+                <Instructions />
+              </Text>
+              <Size>
+                <Width>125</Width>
+                <Height>362</Height>
+              </Size>
+              <Location>
+                <X>385</X>
+                <Y>94</Y>
+              </Location>
+              <DisplayName>OutMessage</DisplayName>
+              <NameFont>
+                <FontFamily>Segoe UI</FontFamily>
+                <Size>9</Size>
+                <Style>Regular</Style>
+              </NameFont>
+              <ShapeProperties>
+                <Shape>Ellipse</Shape>
+                <DefaultSize>
+                  <Width>100</Width>
+                  <Height>60</Height>
+                </DefaultSize>
+                <BorderColor>
+                  <Argb>-16777216</Argb>
+                </BorderColor>
+                <FillColor>
+                  <Argb>-2561</Argb>
+                </FillColor>
+                <Alignment>MiddleCenter</Alignment>
+              </ShapeProperties>
+            </anyType>
+            <anyType xsi:type="TriggerConnection">
+              <Name>NewTriggerConnection2</Name>
+              <Id>decf5500-8012-4ff2-918c-1a5ce788b8d5</Id>
+              <Structure xsi:type="TriggerConnectionStructure">
+                <Id>27a9bacf-c671-48c2-81c0-4727c67639ce</Id>
+                <Types />
+              </Structure>
+              <Text xsi:type="DP_Text">
+                <Id>de103a24-a237-4934-8fbb-36601a1f9efe</Id>
+                <Instructions />
+              </Text>
+              <Size>
+                <Width>98</Width>
+                <Height>116</Height>
+              </Size>
+              <Location>
+                <X>295</X>
+                <Y>344</Y>
+              </Location>
+              <DisplayName>NewTriggerConnection2</DisplayName>
+              <ShowName>false</ShowName>
+              <NameFont>
+                <FontFamily>Segoe UI</FontFamily>
+                <Size>9</Size>
+                <Style>Regular</Style>
+              </NameFont>
+              <LineProperties>
+                <LineWidth>2</LineWidth>
+                <BorderColor>
+                  <Argb>-16777216</Argb>
+                </BorderColor>
+                <BorderWidth>0</BorderWidth>
+                <FillStyle>Dot</FillStyle>
+                <FillColor>
+                  <Argb>-16777216</Argb>
+                </FillColor>
+                <Role1>
+                  <Font>
+                    <FontFamily>Segoe UI</FontFamily>
+                    <Size>9</Size>
+                    <Style>Regular</Style>
+                  </Font>
+                  <Offset>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Offset>
+                </Role1>
+                <Role2>
+                  <Font>
+                    <FontFamily>Segoe UI</FontFamily>
+                    <Size>9</Size>
+                    <Style>Regular</Style>
+                  </Font>
+                  <Icon>..\..\Icons\triangle.gif</Icon>
+                  <Offset>
+                    <X>202</X>
+                    <Y>53</Y>
+                  </Offset>
+                </Role2>
+              </LineProperties>
+              <Role1Id>ed9e73d9-6007-4093-9874-53eb0b53f498</Role1Id>
+              <Role2Id>375c8172-7273-43b0-85b1-0ea7ee290b83</Role2Id>
+            </anyType>
+            <anyType xsi:type="CollabConnection">
+              <Name>NewCollabConnection1</Name>
+              <Id>2f17e278-9a5b-4174-aed3-53d880959249</Id>
+              <Structure xsi:type="CollabConnectionStructure">
+                <Id>f30b1156-585e-4d39-aa78-daceafdf1ad0</Id>
+                <Types />
+              </Structure>
+              <Text xsi:type="DP_Text">
+                <Id>4a2d9bc8-d631-4abc-b77c-962e78e7d811</Id>
+                <Instructions />
+              </Text>
+              <Size>
+                <Width>124</Width>
+                <Height>19</Height>
+              </Size>
+              <Location>
+                <X>309</X>
+                <Y>136</Y>
+              </Location>
+              <DisplayName>NewCollabConnection1</DisplayName>
+              <ShowName>false</ShowName>
+              <NameFont>
+                <FontFamily>Segoe UI</FontFamily>
+                <Size>9</Size>
+                <Style>Regular</Style>
+              </NameFont>
+              <LineProperties>
+                <LineWidth>2</LineWidth>
+                <BorderColor>
+                  <Argb>-16777216</Argb>
+                </BorderColor>
+                <BorderWidth>0</BorderWidth>
+                <FillStyle>Dash</FillStyle>
+                <FillColor>
+                  <Argb>-16777216</Argb>
+                </FillColor>
+                <Role1>
+                  <Font>
+                    <FontFamily>Segoe UI</FontFamily>
+                    <Size>9</Size>
+                    <Style>Regular</Style>
+                  </Font>
+                  <Offset>
+                    <X>130</X>
+                    <Y>17</Y>
+                  </Offset>
+                </Role1>
+                <Role2>
+                  <Font>
+                    <FontFamily>Segoe UI</FontFamily>
+                    <Size>9</Size>
+                    <Style>Regular</Style>
+                  </Font>
+                  <Icon>..\..\Icons\triangle.gif</Icon>
+                  <Offset>
+                    <X>34</X>
+                    <Y>0</Y>
+                  </Offset>
+                </Role2>
+              </LineProperties>
+              <Role1Id>d4210a56-9fd4-4a62-8b95-712f3c498320</Role1Id>
+              <Role2Id>2fca0eb8-b7a2-46b2-a95a-b2d1cefa90fe</Role2Id>
+            </anyType>
+            <anyType xsi:type="CollabConnection">
+              <Name>NewCollabConnection2</Name>
+              <Id>086af44a-7fbc-4f35-99bc-156f3611db49</Id>
+              <Structure xsi:type="CollabConnectionStructure">
+                <Id>1e1f301a-c10c-437c-ab7b-080f30dce29a</Id>
+                <Types />
+              </Structure>
+              <Text xsi:type="DP_Text">
+                <Id>d0bc647c-3535-4abd-baea-ccc359c0460c</Id>
+                <Instructions />
+              </Text>
+              <Size>
+                <Width>105</Width>
+                <Height>43</Height>
+              </Size>
+              <Location>
+                <X>464</X>
+                <Y>301</Y>
+              </Location>
+              <DisplayName>NewCollabConnection2</DisplayName>
+              <ShowName>false</ShowName>
+              <NameFont>
+                <FontFamily>Segoe UI</FontFamily>
+                <Size>9</Size>
+                <Style>Regular</Style>
+              </NameFont>
+              <LineProperties>
+                <LineWidth>2</LineWidth>
+                <BorderColor>
+                  <Argb>-16777216</Argb>
+                </BorderColor>
+                <BorderWidth>0</BorderWidth>
+                <FillStyle>Dash</FillStyle>
+                <FillColor>
+                  <Argb>-16777216</Argb>
+                </FillColor>
+                <Role1>
+                  <Font>
+                    <FontFamily>Segoe UI</FontFamily>
+                    <Size>9</Size>
+                    <Style>Regular</Style>
+                  </Font>
+                  <Offset>
+                    <X>0</X>
+                    <Y>25</Y>
+                  </Offset>
+                </Role1>
+                <Role2>
+                  <Font>
+                    <FontFamily>Segoe UI</FontFamily>
+                    <Size>9</Size>
+                    <Style>Regular</Style>
+                  </Font>
+                  <Icon>..\..\Icons\triangle.gif</Icon>
+                  <Offset>
+                    <X>71</X>
+                    <Y>0</Y>
+                  </Offset>
+                </Role2>
+              </LineProperties>
+              <Role1Id>5c56b208-a63d-4abd-be9f-38e80e7815a7</Role1Id>
+              <Role2Id>ed9e73d9-6007-4093-9874-53eb0b53f498</Role2Id>
+            </anyType>
+          </Types>
+        </Structure>
+        <Text xsi:type="DP_Text">
+          <Id>690c61ac-2d75-4f9a-8f93-8fa5f5a24a3e</Id>
+          <Instructions />
+        </Text>
+        <Size>
+          <Width>753</Width>
+          <Height>527</Height>
+        </Size>
+        <Location>
+          <X>16</X>
+          <Y>14</Y>
+        </Location>
+        <DisplayName>P2PinSocialNetwork</DisplayName>
+        <NameFont>
+          <FontFamily>Segoe UI</FontFamily>
+          <Size>9</Size>
+          <Style>Regular</Style>
+        </NameFont>
+        <ShapeProperties>
+          <DefaultSize>
+            <Width>100</Width>
+            <Height>60</Height>
+          </DefaultSize>
+          <BorderColor>
+            <Argb>-16777216</Argb>
+          </BorderColor>
+          <FillColor>
+            <Argb>-327681</Argb>
+          </FillColor>
+        </ShapeProperties>
+      </anyType>
+    </Types>
+  </Structure>
+  <Text xsi:type="DP_Text">
+    <Id>0974e1d2-e559-45fc-8f68-658daf656c64</Id>
+    <Instructions>
+      <Instruction>
+        <Name>Initialize</Name>
+        <String>foreach (P2PinSocialNetwork s in P2PinSocialNetworkList)
+{
+	int i = 0;
+	foreach (Peer p in s.PeerList)
+	{
+		p.PeerID = "Peer"+i;
+		i++;
+	}
+}</String>
+      </Instruction>
+    </Instructions>
+  </Text>
+</CollaborationArchitecture2Model>

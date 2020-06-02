@@ -1,0 +1,5 @@
+Name SmartRedundancy
+Language VolunteerComputing
+Root .\Models\SmartRedundancy
+Model SmartRedundancy.xml
+Assembly bin\SmartRedundancy.dll

@@ -1,0 +1,5 @@
+Name QueueingTheoryMetamodel
+Language LanguageBuilder
+Root .\Languages\QueueingTheoryMetamodel
+Model QueueingTheoryMetamodel.xml
+Assembly bin\QueueingTheoryMetamodel.dll
