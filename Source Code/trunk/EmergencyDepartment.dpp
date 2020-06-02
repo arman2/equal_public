@@ -1,5 +1,0 @@
-Name EmergencyDepartment
-Language HospitalMetamodel
-Root .\Models\EmergencyDepartmentModel
-Model EmergencyDepartment.xml
-Assembly 

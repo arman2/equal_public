@@ -1,5 +1,0 @@
-Name VolunteerComputing
-Language LanguageBuilder
-Root .\Languages\VolunteerComputing
-Model VolunteerComputing.xml
-Assembly bin\VolunteerComputing.dll

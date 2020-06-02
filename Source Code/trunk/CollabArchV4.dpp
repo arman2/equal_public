@@ -1,5 +1,0 @@
-Name CollabArchV4
-Language LanguageBuilder
-Root .\Languages\CollabArchV4
-Model CollabArchV4.xml
-Assembly bin\CollabArchV4.dll

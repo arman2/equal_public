@@ -1,4 +1,0 @@
-Name VolunteerComputing
-Assembly bin\VolunteerComputing.dll
-DesignerFactory Designer.Factories.VolunteerComputingModelFactory
-AnalystFactory Analyst.Factories.VolunteerComputingModelFactory

@@ -1,4 +1,0 @@
-Name HospitalMetamodel
-Assembly bin\HospitalMetamodel.dll
-DesignerFactory Designer.Factories.HospitalMetamodelModelFactory
-AnalystFactory Analyst.Factories.HospitalMetamodelModelFactory

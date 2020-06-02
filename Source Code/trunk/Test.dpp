@@ -1,5 +1,0 @@
-Name Test
-Language LanguageBuilder
-Root ..\TestLang
-Model Test.xml
-Assembly bin\Test.dll

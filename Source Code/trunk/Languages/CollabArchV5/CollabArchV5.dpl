@@ -1,4 +1,0 @@
-Name CollabArchV5
-Assembly bin\CollabArchV5.dll
-DesignerFactory Designer.Factories.CollabArchV5ModelFactory
-AnalystFactory Analyst.Factories.CollabArchV5ModelFactory

@@ -1,5 +1,0 @@
-Name Simple
-Language LanguageBuilder
-Root .\Languages\Simple
-Model Simple.xml
-Assembly bin\Simple.dll

@@ -1,5 +1,0 @@
-Name CrowdSourcing
-Language CollaborationArchitecture2
-Root .\Models\CrowdSourcing
-Model CrowdSourcing.xml
-Assembly bin\CrowdSourcing.dll

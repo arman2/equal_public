@@ -1,5 +1,0 @@
-Name MonitoringSystem
-Language CollabArchV5
-Root .\Models\MonSysV2
-Model MonSysV2.xml
-Assembly bin\MonitoringSystem.dll

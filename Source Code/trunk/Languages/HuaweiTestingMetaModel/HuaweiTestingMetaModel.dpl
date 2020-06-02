@@ -1,4 +1,0 @@
-Name HuaweiTestingMetaModel
-Assembly bin\HuaweiTestingMetaModel.dll
-DesignerFactory Designer.Factories.HuaweiTestingMetaModelModelFactory
-AnalystFactory Analyst.Factories.HuaweiTestingMetaModelModelFactory

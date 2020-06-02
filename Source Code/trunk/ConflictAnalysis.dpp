@@ -1,5 +1,0 @@
-Name ConflictAnalysis
-Language CollaborationArchitecture
-Root .\Models\ConflictAnalysis
-Model ConflictAnalysis.xml
-Assembly bin\ConflictAnalysis.dll

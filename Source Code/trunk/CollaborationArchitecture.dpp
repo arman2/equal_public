@@ -1,5 +1,0 @@
-Name CollaborationArchitecture
-Language LanguageBuilder
-Root .\Languages\CollaborationArchitecture
-Model CollaborationArchitecture.xml
-Assembly bin\CollaborationArchitecture.dll

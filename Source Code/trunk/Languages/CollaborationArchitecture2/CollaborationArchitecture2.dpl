@@ -1,4 +1,0 @@
-Name CollaborationArchitecture2
-Assembly bin\CollaborationArchitecture2.dll
-DesignerFactory Designer.Factories.CollaborationArchitecture2ModelFactory
-AnalystFactory Analyst.Factories.CollaborationArchitecture2ModelFactory
